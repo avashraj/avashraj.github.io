@@ -1,7 +1,8 @@
----
-title: "Welcome"
-description: "This is my homepage."
----
++++
+date = '2025-01-19T19:17:12-08:00'
+draft = false
+title = 'Documenting Creating My Dormlab'
++++
 
 # **heyyy im avash aka putergoon**
 
