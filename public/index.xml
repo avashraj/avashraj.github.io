@@ -2,25 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documenting Creating My Dormlab on putergoon.com</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content in Documenting Creating My Dormlab on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jan 2025 14:17:14 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Operating Systems 1</title>
-      <link>http://localhost:1313/notes/operating-systems-1/</link>
-      <pubDate>Thu, 23 Jan 2025 14:17:14 -0800</pubDate>
-      <guid>http://localhost:1313/notes/operating-systems-1/</guid>
-      <description>&lt;p&gt;Here are my notes taken during my Operating Systems class (CSE150). These are summaries of my notes taken on&#xA;Operating Systems Concepts by&lt;/p&gt;&#xA;&lt;p&gt;poooop&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Documenting Creating My Dormlab</title>
-      <link>http://localhost:1313/blogs/mydormhomelab/</link>
-      <pubDate>Sun, 19 Jan 2025 19:17:12 -0800</pubDate>
-      <guid>http://localhost:1313/blogs/mydormhomelab/</guid>
-      <description>&lt;p&gt;I brought my old Thinkpad to school to install/practice linux on. I installed Ubuntu with Gnome successfully&#xA;a while ago but I haven&amp;rsquo;t used it at all. I&amp;rsquo;ve been babysitting this machine for 5ish months and I want to do&#xA;something with it. Although I move out in 4 months, I decided to make a homelab with it.&lt;/p&gt;&#xA;&lt;p&gt;The computer is a Thinkpad with a &amp;hellip;i5 processor with 8gb of ram and 500gb of disk storage. The processor has&#xA;&amp;hellip; cores so I decided to make .. virtual machines so I could play with distributed computing.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
