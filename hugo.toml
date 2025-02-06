@@ -8,9 +8,9 @@ enableEmoji = true
   [privacy.googleAnalytics]
     disable = true
     respectDoNotTrack = true
-[params]
-	mode="toggle"
-    custom_css = ["css/main.css"]
+# [params]
+# 	mode="toggle"
+#     custom_css = ["css/main.css"]
 
 [[menu.main]]
 name = "Blog"
