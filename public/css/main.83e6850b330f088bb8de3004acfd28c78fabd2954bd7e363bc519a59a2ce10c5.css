@@ -28,7 +28,6 @@ body{
 
 p {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 1.1em;
   line-height: 1.5;
 }
 
@@ -65,7 +64,7 @@ ul li {
   padding-bottom: 4px;
 }
 ul > li::before {
-  content: '- ';
+  content: '$ ';
   font-weight: bold;
 }
 
@@ -148,10 +147,7 @@ header {
 header .main {
   font-size: 1.5rem;
 }
-h1 {
-  font-size: 1.4rem;
-}
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   margin-top: 2em;
 }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>First Computer Vision Quiz - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Computer vision is the science/art of translating images into useful information.
+An image is a matrix or tensor of discrete values ranging from 0 to 255. The number is the intensity of
+light captured by a sensor. If you were to look at a picture, a single pixel is represented by one of these numbers.
+Pixels can have one channel (gray scale image where 0 is black and 255 is white) or multiple channels like a rgb image
+(0 is black and 255 is the max intensity for that color)." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="//localhost:1313/notes/cvquiz1/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="First Computer Vision Quiz">
+  <meta property="og:description" content="Computer vision is the science/art of translating images into useful information.
+An image is a matrix or tensor of discrete values ranging from 0 to 255. The number is the intensity of light captured by a sensor. If you were to look at a picture, a single pixel is represented by one of these numbers. Pixels can have one channel (gray scale image where 0 is black and 255 is white) or multiple channels like a rgb image (0 is black and 255 is the max intensity for that color).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-02-05T19:55:18-08:00">
+    <meta property="article:modified_time" content="2025-02-05T19:55:18-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="First Computer Vision Quiz">
+  <meta name="twitter:description" content="Computer vision is the science/art of translating images into useful information.
+An image is a matrix or tensor of discrete values ranging from 0 to 255. The number is the intensity of light captured by a sensor. If you were to look at a picture, a single pixel is represented by one of these numbers. Pixels can have one channel (gray scale image where 0 is black and 255 is white) or multiple channels like a rgb image (0 is black and 255 is the max intensity for that color).">
+
+	
+        <link href="//localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="//localhost:1313/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="//localhost:1313/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="/blogs">Blog</a>
+		
+		<a href="/notes">Notes</a>
+		
+		<a href="/daily">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">First Computer Vision Quiz</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p><strong>Computer vision is the science/art of translating images into useful information.</strong></p>
+<p>An image is a matrix or tensor of discrete values ranging from 0 to 255. The number is the intensity of
+light captured by a sensor. If you were to look at a picture, a single pixel is represented by one of these numbers.
+Pixels can have one channel (gray scale image where 0 is black and 255 is white) or multiple channels like a rgb image
+(0 is black and 255 is the max intensity for that color).</p>
+<h3 id="homogeneous-coordinates-and-perspective-projection">Homogeneous coordinates and perspective projection</h3>
+<p>Homogeneous coordinates are another way to represent points and lines. They are equivalent points to their Euclidian counterparts. Typically coordinates are written with n numbers
+where n is the dimension. In a plane it is (x,y). Homogeneous coordinates have n + 1 coordinates because it projects that
+point onto a higher dimensional space. This would be written as (x,y,w). This has the advantages of being able to translate using matrix multiplication,
+utilize projective geometry, and make perspective projection more natural.</p>
+<p>show homogeneous points in latex</p>
+<p>To get an image, we need to be able to project a 3d point to a 2d point. A simple way of doing this is orthographic
+projection. In this system, we assume that all light rays are parallel to the camera&rsquo;s z axis. This way we can just drop
+the z axis to go from 3d to 2d. However, we now loose all depth information. If an object is further away, it will not
+appear smaller in the image.</p>
+<p>A better system is <strong>perspective projection</strong>. We now assume that light rays pass through their point in the world, their
+corresponding pixel in the image, and the camera&rsquo;s center. We also make sure that the z axis of the camera is aligned with
+the z axis of the image. Points in the world are mapped to their point on the image by dividing by the z coordinate and
+multiplying by the focal length(distance from the camera to the image). A <strong>principal point offset</strong> is also added to ensure
+all coordinates are positive in the image.</p>
+<p><strong>How can we map a 3d point in the world to a 2d point in our image?</strong></p>
+<p>We can map a 3d point irl to a 2d point in our picture using a series of matrix transformations. First we need to convert
+from the &ldquo;world&rsquo;s&rdquo; coordinate system to the camera&rsquo;s. This can be done with the camera pose or the extrinsic matrix. It
+is a rotation and a translation. Next we need to go from the camera&rsquo;s to the image&rsquo;s coordinates. We do this with the
+(intrinsic) calibration matrix K. After these transformations (which can be computed as one 3x4 matrix) we get to our
+image coordinates.</p>
+<p>show intrinsic and extrinsic and k matrix in latex</p>
+<p><strong>What if they camera&rsquo;s coordinate system is different from the coordinate system of the object we are trying to capture?</strong></p>
+<p><strong>Parallel lines in perspective projection of 3d meet at a vanishing point</strong>
+The vanishing point occurs when w = 0 in homogeneous coordinates. These are also called points at infinity. A picture can
+have multiple vanishing points, with different lines having different vanishign points. Lines on the same plane have
+points at infinity on the same vanishing line. If we have a line formed by (a1 x a2) and another by (b1 x b2), their
+cross product is their vanishing point.</p>
+<p>talk about full camera matrix and show it in latex</p>
+<p>An image histogram is a plot of all of the pixels in an image. The x axis is the image intensity and the y axis is the count.
+An image histogram that is shifted to the left is usually underexposed and darker. One that is shifted to the right is usually
+overexposed. A gamma compression can be used to show details hidden in dark regions in an image. A gamma value 0-1 makes the
+image darker, while a gamma value above 1 makes it brighter.</p>
+<h3 id="smoothing-and-edge-detection">smoothing and edge detection</h3>
+<p>Filtering is an important process in computer vision. It can help with removing noise as well as finding features like edges,
+points, or corners. To apply a filter, we use a matrix called a kernel. The kernel is used to perform a convolution. A
+convolution can be imagined as the overlapping of the kernel on top of the image matrix. We take into account the overlapping
+cells and compute some value using the original pixel values and the kernel values.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+</div>
+    </body>
+</html>

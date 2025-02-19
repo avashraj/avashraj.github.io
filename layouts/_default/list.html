@@ -1,15 +1,12 @@
 {{ define "main" }}
-<!-- {{ if isset .Data "Term" }} -->
-<!-- <h1>Entries tagged - "{{ .Data.Term }}"</h1> -->
-<!-- {{ else }} -->
-<!-- <h1 class="page-title">All articles</h1> -->
-<!-- {{ end }} -->
 
 {{ $bro := string .Path }}
 {{ if strings.Contains $bro "notes" }}
-<h1>my notes</h1>
+    <h1>notes I took studying</h1>
+{{ else if strings.Contains $bro "daily" }}
+    <h1>daily goals and learning</h1>
 {{ else }}
-<h1>my blogs</h1>
+<h1>organized thoughts in writing</h1>
 {{ end }}
 
 <ul class="posts">

@@ -2,11 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documenting Creating My Dormlab on putergoon.com</title>
-    <link>avashraj.github.io/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Documenting Creating My Dormlab on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Feb 2025 13:56:39 -0800</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feb 19 2025</title>
+      <link>//localhost:1313/daily/feb-19-2025/</link>
+      <pubDate>Wed, 19 Feb 2025 13:56:39 -0800</pubDate>
+      <guid>//localhost:1313/daily/feb-19-2025/</guid>
+      <description>&lt;p&gt;today i gotta&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 3 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; begin studying for my circuit theory quiz next monday&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; hit chest and triceps in the gym!&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>First Computer Vision Quiz</title>
+      <link>//localhost:1313/notes/cvquiz1/</link>
+      <pubDate>Wed, 05 Feb 2025 19:55:18 -0800</pubDate>
+      <guid>//localhost:1313/notes/cvquiz1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Computer vision is the science/art of translating images into useful information.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;An image is a matrix or tensor of discrete values ranging from 0 to 255. The number is the intensity of&#xA;light captured by a sensor. If you were to look at a picture, a single pixel is represented by one of these numbers.&#xA;Pixels can have one channel (gray scale image where 0 is black and 255 is white) or multiple channels like a rgb image&#xA;(0 is black and 255 is the max intensity for that color).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Operating Systems 1</title>
+      <link>//localhost:1313/notes/operating-systems-1/</link>
+      <pubDate>Thu, 23 Jan 2025 14:17:14 -0800</pubDate>
+      <guid>//localhost:1313/notes/operating-systems-1/</guid>
+      <description>&lt;p&gt;Here are my notes taken during my Operating Systems class (CSE150). These are summaries of my notes taken on&#xA;Operating Systems Concepts by&lt;/p&gt;&#xA;&lt;p&gt;poooop&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Documenting Creating My Dormlab</title>
+      <link>//localhost:1313/blogs/mydormhomelab/</link>
+      <pubDate>Sun, 19 Jan 2025 19:17:12 -0800</pubDate>
+      <guid>//localhost:1313/blogs/mydormhomelab/</guid>
+      <description>&lt;p&gt;I brought my old Thinkpad to school to install/practice linux on. I installed Ubuntu with Gnome successfully&#xA;a while ago but I haven&amp;rsquo;t used it at all. I&amp;rsquo;ve been babysitting this machine for 5ish months and I want to do&#xA;something with it. Although I move out in 4 months, I decided to make a homelab with it.&lt;/p&gt;&#xA;&lt;p&gt;The computer is a Thinkpad with a &amp;hellip;i5 processor with 8gb of ram and 500gb of disk storage. The processor has&#xA;&amp;hellip; cores so I decided to make .. virtual machines so I could play with distributed computing.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
