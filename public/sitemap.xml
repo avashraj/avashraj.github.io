@@ -2,28 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/daily/</loc>
+    <loc>//localhost:1313/journal/feb-19-2025/</loc>
     <lastmod>2025-02-19T13:56:39-08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/daily/feb-19-2025/</loc>
+    <loc>//localhost:1313/journal/</loc>
     <lastmod>2025-02-19T13:56:39-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/notes/cvquiz1/</loc>
-    <lastmod>2025-02-05T19:55:18-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/notes/</loc>
     <lastmod>2025-02-05T19:55:18-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/notes/operating-systems-1/</loc>
-    <lastmod>2025-01-23T14:17:14-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/blogs/</loc>
     <lastmod>2025-01-19T19:17:12-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-01-19T19:17:12-08:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/blogs/mydormhomelab/</loc>
     <lastmod>2025-01-19T19:17:12-08:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>

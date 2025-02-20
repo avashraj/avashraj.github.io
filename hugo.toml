@@ -26,5 +26,5 @@ weight = 3
 
 [[menu.main]]
 name = "Journal"
-url = "/daily"
+url = "/journal"
 weight = 5
