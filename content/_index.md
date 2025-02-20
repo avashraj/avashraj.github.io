@@ -17,12 +17,12 @@ i write a journal entry every day and i'll be writing blogs and notes soon :)
 
 ----
 
-# today, February 19, 2025
+# today, February 20, 2025
 i gotta
 
- - [ ] apply to 3 jobs (custom resume, cover letter per role)
- - [ ] begin studying for my circuit theory quiz next monday
- - [ ] hit chest and triceps in the gym!
+ - [ ] apply to 2 jobs (custom resume, cover letter per role)
+ - [ ] work 4 hours
+ - [ ] hit back and biceps in the gym!
 
 
 

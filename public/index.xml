@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documenting Creating My Dormlab on putergoon.com</title>
-    <link>//localhost:1313/</link>
+    <link>avashraj.github.io/</link>
     <description>Recent content in Documenting Creating My Dormlab on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Feb 2025 13:56:39 -0800</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Feb 19 2025</title>
-      <link>//localhost:1313/journal/feb-19-2025/</link>
+      <link>avashraj.github.io/journal/feb-19-2025/</link>
       <pubDate>Wed, 19 Feb 2025 13:56:39 -0800</pubDate>
-      <guid>//localhost:1313/journal/feb-19-2025/</guid>
-      <description>&lt;p&gt;today i gotta&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 3 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; begin studying for my circuit theory quiz next monday&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; hit chest and triceps in the gym!&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>avashraj.github.io/journal/feb-19-2025/</guid>
+      <description>&lt;h3 id=&#34;i-want-to&#34;&gt;i want to&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 3 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;i only got one custom application done :(&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;begin studying for my circuit theory quiz next monday&lt;/del&gt; :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;hit chest and triceps in the gym!&lt;/del&gt; :)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;i-learned&#34;&gt;i learned&lt;/h3&gt;&#xA;&lt;p&gt;In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed&#xA;locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded&#xA;code. One way to do this is to disable all interrupts, but this is an insecure method.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
