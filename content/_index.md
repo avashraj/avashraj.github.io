@@ -20,7 +20,7 @@ i write a journal entry every day and i'll be writing blogs and notes soon :)
 # today, February 20, 2025
 i gotta
 
- - [ ] apply to 2 jobs (custom resume, cover letter per role)
+ - [x] apply to 2 jobs (custom resume, cover letter per role)
  - [ ] work 4 hours
  - [ ] hit back and biceps in the gym!
 
