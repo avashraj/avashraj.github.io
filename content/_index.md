@@ -22,7 +22,7 @@ i gotta
 
  - [x] apply to 2 jobs (custom resume, cover letter per role)
  - [ ] work 4 hours
- - [ ] hit back and biceps in the gym!
+ - [x] hit back and biceps in the gym!
 
 
 
