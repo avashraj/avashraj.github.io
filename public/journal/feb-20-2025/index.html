@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Feb 20 2025 - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="i want to
+
+ apply to 2 jobs (custom resume, cover letter per role)
+ work 4 hours
+ hit back and biceps in the gym!
+
+i learned
+I had my computer vision lab in the morning and I spent 99 minutes trying to figure out RANSAC and get it to work. I
+initially thought it was easier than it actually was. I learned how to make the A matrix using numpy. It was just a
+bunch of hardcoded array indexing to put the correct points in the right spots. That took me wayy longer than it should.
+So the homography matrix will help us stitch together two images if they have at least 4 feature matches between the two
+images. We get the features by using SIFT, (something we just use but do not derive). From these SIFT features, we can
+find matches (I forget how we do this its late :(  ) between the two images. If we have at least 4 we can begin our RANSAC
+loop." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/journal/feb-20-2025/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Feb 20 2025">
+  <meta property="og:description" content="i want to apply to 2 jobs (custom resume, cover letter per role) work 4 hours hit back and biceps in the gym! i learned I had my computer vision lab in the morning and I spent 99 minutes trying to figure out RANSAC and get it to work. I initially thought it was easier than it actually was. I learned how to make the A matrix using numpy. It was just a bunch of hardcoded array indexing to put the correct points in the right spots. That took me wayy longer than it should. So the homography matrix will help us stitch together two images if they have at least 4 feature matches between the two images. We get the features by using SIFT, (something we just use but do not derive). From these SIFT features, we can find matches (I forget how we do this its late :( ) between the two images. If we have at least 4 we can begin our RANSAC loop.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="journal">
+    <meta property="article:published_time" content="2025-02-21T01:30:15-08:00">
+    <meta property="article:modified_time" content="2025-02-21T01:30:15-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Feb 20 2025">
+  <meta name="twitter:description" content="i want to apply to 2 jobs (custom resume, cover letter per role) work 4 hours hit back and biceps in the gym! i learned I had my computer vision lab in the morning and I spent 99 minutes trying to figure out RANSAC and get it to work. I initially thought it was easier than it actually was. I learned how to make the A matrix using numpy. It was just a bunch of hardcoded array indexing to put the correct points in the right spots. That took me wayy longer than it should. So the homography matrix will help us stitch together two images if they have at least 4 feature matches between the two images. We get the features by using SIFT, (something we just use but do not derive). From these SIFT features, we can find matches (I forget how we do this its late :( ) between the two images. If we have at least 4 we can begin our RANSAC loop.">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Feb 20 2025</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<h3 id="i-want-to">i want to</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> apply to 2 jobs (custom resume, cover letter per role)</li>
+<li><input checked="" disabled="" type="checkbox"> work 4 hours</li>
+<li><input checked="" disabled="" type="checkbox"> hit back and biceps in the gym!</li>
+</ul>
+<h3 id="i-learned">i learned</h3>
+<p>I had my computer vision lab in the morning and I spent 99 minutes trying to figure out RANSAC and get it to work. I
+initially thought it was easier than it actually was. I learned how to make the A matrix using numpy. It was just a
+bunch of hardcoded array indexing to put the correct points in the right spots. That took me wayy longer than it should.
+So the homography matrix will help us stitch together two images if they have at least 4 feature matches between the two
+images. We get the features by using SIFT, (something we just use but do not derive). From these SIFT features, we can
+find matches (I forget how we do this its late :(  ) between the two images. If we have at least 4 we can begin our RANSAC
+loop.</p>
+<p>Okay first lemme talk about how to compute homography. The homography matrix/vector is a 3x3 matrix or 9 row vector with
+values h1 to h9. We don&rsquo;t know these values so we need to figure that out. We do this by creating the A matrix using a
+formula and x,y values from a matching pair from our two images that we want to stitch together. Once we have this matrix,
+we can set it up as a least squares problem $Ah = 0$ and through some linear algebra magic we can use the singular value
+decompistion to find the eigenvector with the smallest eigenvalue. This eigenvector will be our homography matrix. There
+was an intuitive way to think about why it would be the smallest one, but i forget.</p>
+<p>Now I got stuck lol. I know I have to calculate the error for each match (what the slides and directions say) but I have no
+idea what that means. Does that mean that we find the error per each matching point? Also, RANSAC counts the number of
+&lsquo;inliers&rsquo;. I figure out whether a point is an inlier or not by comparing the points error to the threshold. Ohhhh
+So i have to measure the error of every single point among the matching pairs? Ransac will return the best homography matrix.
+I understand a bit more but I&rsquo;m still lost.</p>
+<p>I applied to two jobs with customized resumes and cover letters. I was sad because I wrote my cover letters and I used chatgpt
+to get feedback and the LLM generated version of my cover letters was so much clearer. I guess my writing skills just need
+to improve then. Thats part of the reason I am doing this; to become a better written communicator.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>
