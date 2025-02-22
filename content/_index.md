@@ -20,10 +20,10 @@ i write a journal entry every day and i'll be writing blogs and notes soon :)
 # today, February 21, 2025
 i gotta
 
- - [x] apply to 2 jobs (custom resume, cover letter per role)
- - [x] work 4 hours
- - [ ] hit legs in the gym!
- - [ ] study more circuit theory
+ - [ ] apply to 2 jobs (custom resume, cover letter per role)
+ - [ ] work 4 hours
+ - [ ] study 2 more circuit theory slideshows
+ - [ ] work on sapphire for 2 hours
 
 
 
