@@ -21,7 +21,7 @@ i write a journal entry every day and i'll be writing blogs and notes soon :)
 i gotta
 
  - [ ] apply to 2 jobs (custom resume, cover letter per role)
- - [ ] work 4 hours
+ - [x] work 4 hours
  - [ ] hit legs in the gym!
  - [ ] study more circuit theory
 
