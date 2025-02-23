@@ -6,8 +6,15 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2025 01:20:16 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2025 22:53:10 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feb 22 2025</title>
+      <link>avashraj.github.io/journal/feb-22-2025/</link>
+      <pubDate>Sat, 22 Feb 2025 22:53:10 -0800</pubDate>
+      <guid>avashraj.github.io/journal/feb-22-2025/</guid>
+      <description>&lt;h3 id=&#34;i-gotta&#34;&gt;i gotta&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 2 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work 2 hours &lt;strong&gt;only one hour :(&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; study 2 more circuit theory slideshows&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work on sapphire for 2 hours&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I began designing the system for my friends and I&amp;rsquo;s startup. We will have a MacOS client, an API server, and an external Postgres DB.&#xA;It was pretty fun trying to figure out what was the best options. ChatGPT is a big help because theres so many important things&#xA;that I have no idea about. For example I thought we could just enable HTTPS in our API framework and let it run. While this is possible&#xA;with FastAPI, it is not industry standard. I want to work towards making everything I do standard industry procedure so I can better&#xA;prepare myself for the job market. Instead we would have to enable SSL certificates and have NGINX act as a reverse proxy. A SSL&#xA;certificate (secure socket i forgot the l) encrypts the data. A reverse proxy is a server that points to another server.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Feb 21 2025</title>
       <link>avashraj.github.io/journal/feb-21-2025/</link>
