@@ -17,14 +17,11 @@ i write a journal entry every day and i'll be writing blogs and notes soon :)
 
 ----
 
-# today, February 22, 2025
+# today Sunday February 23, 2025
 i gotta
 
- - [x] apply to 2 jobs (custom resume, cover letter per role)
- - [ ] work 2 hours
- - [ ] study 2 more circuit theory slideshows
- - [ ] work on sapphire for 2 hours
-
-
-
+ - [ ] apply to 2 jobs (custom resume, cover letter per role)
+ - [ ] study circuit theory till i feel confidant
+ - [ ] work on sapphire for 3 hours
+ - [ ] do job 1 hour
 
