@@ -6,49 +6,49 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Feb 2025 23:00:39 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Feb 2025 22:11:49 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Feb 23 25</title>
+      <title>Feb 24 2025</title>
+      <link>avashraj.github.io/journal/feb-24-2025/</link>
+      <pubDate>Mon, 24 Feb 2025 22:11:49 -0800</pubDate>
+      <guid>avashraj.github.io/journal/feb-24-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;In operating systems class, I learned about the reader/writer synchronization&#xA;problem. If we are creating a shared document, we need a way for multiple people&#xA;to be able to read it and write it at the same time. The correct solution to this is&#xA;to use locks and monitors to protect the section of code that deals with our logical&#xA;variables. A couple requirements are that only one person can write to the doc at one&#xA;time, as many people as possible need to be able to read from it. (Also this is 12 hours&#xA;after my lecture, I&amp;rsquo;m just trying to active recall it to the best of my ability).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Feb 23 2025</title>
       <link>avashraj.github.io/journal/feb-23-25/</link>
       <pubDate>Sun, 23 Feb 2025 23:00:39 -0800</pubDate>
       <guid>avashraj.github.io/journal/feb-23-25/</guid>
-      <description>&lt;h3 id=&#34;i-gotta&#34;&gt;i gotta&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 2 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; study circuit theory till i feel confidant&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work on sapphire for 3 hours&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; do job 1 hour&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;waking up late sucks terribly. learning concepts and being able to apply those concepts are wayyyy different&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Circuit Theory Quiz1</title>
-      <link>avashraj.github.io/notes/circuit-theory-quiz1/</link>
-      <pubDate>Sun, 23 Feb 2025 16:51:27 -0800</pubDate>
-      <guid>avashraj.github.io/notes/circuit-theory-quiz1/</guid>
-      <description></description>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;waking up late sucks terribly. learning concepts and being able to apply those concepts are wayyyy different&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feb 22 2025</title>
       <link>avashraj.github.io/journal/feb-22-2025/</link>
       <pubDate>Sat, 22 Feb 2025 22:53:10 -0800</pubDate>
       <guid>avashraj.github.io/journal/feb-22-2025/</guid>
-      <description>&lt;h3 id=&#34;i-gotta&#34;&gt;i gotta&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 2 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work 2 hours &lt;strong&gt;only one hour :(&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; study 2 more circuit theory slideshows&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work on sapphire for 2 hours&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I began designing the system for my friends and I&amp;rsquo;s startup. We will have a MacOS client, an API server, and an external Postgres DB.&#xA;It was pretty fun trying to figure out what was the best options. ChatGPT is a big help because theres so many important things&#xA;that I have no idea about. For example I thought we could just enable HTTPS in our API framework and let it run. While this is possible&#xA;with FastAPI, it is not industry standard. I want to work towards making everything I do standard industry procedure so I can better&#xA;prepare myself for the job market. Instead we would have to enable SSL certificates and have NGINX act as a reverse proxy. A SSL&#xA;certificate (secure socket i forgot the l) encrypts the data. A reverse proxy is a server that points to another server.&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I began designing the system for my friends and I&amp;rsquo;s startup. We will have a MacOS client, an API server, and an external Postgres DB.&#xA;It was pretty fun trying to figure out what was the best options. ChatGPT is a big help because theres so many important things&#xA;that I have no idea about. For example I thought we could just enable HTTPS in our API framework and let it run. While this is possible&#xA;with FastAPI, it is not industry standard. I want to work towards making everything I do standard industry procedure so I can better&#xA;prepare myself for the job market. Instead we would have to enable SSL certificates and have NGINX act as a reverse proxy. A SSL&#xA;certificate (secure socket i forgot the l) encrypts the data. A reverse proxy is a server that points to another server.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feb 21 2025</title>
       <link>avashraj.github.io/journal/feb-21-2025/</link>
       <pubDate>Sat, 22 Feb 2025 01:20:16 -0800</pubDate>
       <guid>avashraj.github.io/journal/feb-21-2025/</guid>
-      <description>&lt;h3 id=&#34;i-gotta&#34;&gt;i gotta&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 2 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work 4 hours&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; hit legs in the gym!&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; study more circuit theory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I studied another slideshow of my circuit theory class and I went over more fundamental concepts.&#xA;Resistance is the capability to stop the flow of current and is the opposite of conductance. The unit for resistance is&#xA;the ohm. This brings me to the first big concept/strategy for solving circuits: Ohm&amp;rsquo;s law. Ohm&amp;rsquo;s law states that the voltage&#xA;across a conductor is proportional to the amount of current that flows through it. $V = IR$&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I studied another slideshow of my circuit theory class and I went over more fundamental concepts.&#xA;Resistance is the capability to stop the flow of current and is the opposite of conductance. The unit for resistance is&#xA;the ohm. This brings me to the first big concept/strategy for solving circuits: Ohm&amp;rsquo;s law. Ohm&amp;rsquo;s law states that the voltage&#xA;across a conductor is proportional to the amount of current that flows through it. $V = IR$&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feb 20 2025</title>
       <link>avashraj.github.io/journal/feb-20-2025/</link>
       <pubDate>Fri, 21 Feb 2025 01:30:15 -0800</pubDate>
       <guid>avashraj.github.io/journal/feb-20-2025/</guid>
-      <description>&lt;h3 id=&#34;i-want-to&#34;&gt;i want to&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 2 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; work 4 hours&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; hit back and biceps in the gym!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;i-learned&#34;&gt;i learned&lt;/h3&gt;&#xA;&lt;p&gt;I had my computer vision lab in the morning and I spent 99 minutes trying to figure out RANSAC and get it to work. I&#xA;initially thought it was easier than it actually was. I learned how to make the A matrix using numpy. It was just a&#xA;bunch of hardcoded array indexing to put the correct points in the right spots. That took me wayy longer than it should.&#xA;So the homography matrix will help us stitch together two images if they have at least 4 feature matches between the two&#xA;images. We get the features by using SIFT, (something we just use but do not derive). From these SIFT features, we can&#xA;find matches (I forget how we do this its late :(  ) between the two images. If we have at least 4 we can begin our RANSAC&#xA;loop.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;i-learned&#34;&gt;i learned&lt;/h3&gt;&#xA;&lt;p&gt;I had my computer vision lab in the morning and I spent 99 minutes trying to figure out RANSAC and get it to work. I&#xA;initially thought it was easier than it actually was. I learned how to make the A matrix using numpy. It was just a&#xA;bunch of hardcoded array indexing to put the correct points in the right spots. That took me wayy longer than it should.&#xA;So the homography matrix will help us stitch together two images if they have at least 4 feature matches between the two&#xA;images. We get the features by using SIFT, (something we just use but do not derive). From these SIFT features, we can&#xA;find matches (I forget how we do this its late :(  ) between the two images. If we have at least 4 we can begin our RANSAC&#xA;loop.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Feb 19 2025</title>
       <link>avashraj.github.io/journal/feb-19-2025/</link>
       <pubDate>Wed, 19 Feb 2025 13:56:39 -0800</pubDate>
       <guid>avashraj.github.io/journal/feb-19-2025/</guid>
-      <description>&lt;h3 id=&#34;i-want-to&#34;&gt;i want to&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply to 3 jobs (custom resume, cover letter per role)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;i only got one custom application done :(&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;begin studying for my circuit theory quiz next monday&lt;/del&gt; :)&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;hit chest and triceps in the gym!&lt;/del&gt; :)&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;i-learned&#34;&gt;i learned&lt;/h3&gt;&#xA;&lt;p&gt;In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed&#xA;locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded&#xA;code. One way to do this is to disable all interrupts, but this is an insecure method.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;i-learned&#34;&gt;i learned&lt;/h3&gt;&#xA;&lt;p&gt;In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed&#xA;locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded&#xA;code. One way to do this is to disable all interrupts, but this is an insecure method.&lt;/p&gt;&#xA;&lt;p&gt;We introduced the concept of &lt;strong&gt;semaphores&lt;/strong&gt;. A semaphore is a type of lock that has a counter with two methods:&#xA;.p() and .v() The p function checks if the variable (semaphores store a non negative integer) is non zero. If it is&#xA;we decrease it. The v function increments the&#xA;semaphore by one and wakes up sleeping threads waiting to access the shared data. If we were to imagine two subroutines that&#xA;need the same variable, we can initialize a semaphore to 1 and use it to maintain thread safety. Before one subroutine&#xA;accesses that variable we would call &lt;code&gt;semaphore.p()&lt;/code&gt; to lock it. After we run the critical section (code that should not be&#xA;interrupted during its execution) we can call &lt;code&gt;semaphore.v()&lt;/code&gt; to free it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

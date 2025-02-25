@@ -10,13 +10,9 @@ title = 'becoming GOAT'
   - operating systems, computer vision, fullstack development, circuit theory
 
 ## currently I am
- - working on my SAPPHIRE [my friends and I's startup]
+ - working on my SAPPHIRE -> THE ULTIMATE PRODUCTIVITY TOOL
+ - building a tool for professors to make skill based groups for technical projects
+
+this is where I document my learning. 
 
 i write a journal entry every day and i'll be writing blogs and notes soon :)
-
-----
-
-# today Monday February 24, 2025
-i gotta
- - [ ] finish fullstack web development lab
- - [ ] work through all lecture problems in circuit theory

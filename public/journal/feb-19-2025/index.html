@@ -2,26 +2,23 @@
 <html><head lang="en">
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Feb 19 2025 - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="i want to
-
- apply to 3 jobs (custom resume, cover letter per role)
-
-i only got one custom application done :(
-begin studying for my circuit theory quiz next monday :)
-hit chest and triceps in the gym! :)
-
-i learned
+	<meta name="description" content="i learned
 In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed
 locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded
-code. One way to do this is to disable all interrupts, but this is an insecure method." />
+code. One way to do this is to disable all interrupts, but this is an insecure method.
+We introduced the concept of semaphores. A semaphore is a type of lock that has a counter with two methods:
+.p() and .v() The p function checks if the variable (semaphores store a non negative integer) is non zero. If it is
+we decrease it. The v function increments the
+semaphore by one and wakes up sleeping threads waiting to access the shared data. If we were to imagine two subroutines that
+need the same variable, we can initialize a semaphore to 1 and use it to maintain thread safety. Before one subroutine
+accesses that variable we would call semaphore.p() to lock it. After we run the critical section (code that should not be
+interrupted during its execution) we can call semaphore.v() to free it." />
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content="avashraj.github.io/journal/feb-19-2025/">
   <meta property="og:site_name" content="putergoon.com">
   <meta property="og:title" content="Feb 19 2025">
-  <meta property="og:description" content="i want to apply to 3 jobs (custom resume, cover letter per role) i only got one custom application done :(
-begin studying for my circuit theory quiz next monday :)
-hit chest and triceps in the gym! :)
-i learned In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded code. One way to do this is to disable all interrupts, but this is an insecure method.">
+  <meta property="og:description" content="i learned In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded code. One way to do this is to disable all interrupts, but this is an insecure method.
+We introduced the concept of semaphores. A semaphore is a type of lock that has a counter with two methods: .p() and .v() The p function checks if the variable (semaphores store a non negative integer) is non zero. If it is we decrease it. The v function increments the semaphore by one and wakes up sleeping threads waiting to access the shared data. If we were to imagine two subroutines that need the same variable, we can initialize a semaphore to 1 and use it to maintain thread safety. Before one subroutine accesses that variable we would call semaphore.p() to lock it. After we run the critical section (code that should not be interrupted during its execution) we can call semaphore.v() to free it.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="journal">
@@ -30,10 +27,8 @@ i learned In the morning I had my operating systems lecture where we discussed v
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Feb 19 2025">
-  <meta name="twitter:description" content="i want to apply to 3 jobs (custom resume, cover letter per role) i only got one custom application done :(
-begin studying for my circuit theory quiz next monday :)
-hit chest and triceps in the gym! :)
-i learned In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded code. One way to do this is to disable all interrupts, but this is an insecure method.">
+  <meta name="twitter:description" content="i learned In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded code. One way to do this is to disable all interrupts, but this is an insecure method.
+We introduced the concept of semaphores. A semaphore is a type of lock that has a counter with two methods: .p() and .v() The p function checks if the variable (semaphores store a non negative integer) is non zero. If it is we decrease it. The v function increments the semaphore by one and wakes up sleeping threads waiting to access the shared data. If we were to imagine two subroutines that need the same variable, we can initialize a semaphore to 1 and use it to maintain thread safety. Before one subroutine accesses that variable we would call semaphore.p() to lock it. After we run the critical section (code that should not be interrupted during its execution) we can call semaphore.v() to free it.">
 
 	
         <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
@@ -94,15 +89,7 @@ i learned In the morning I had my operating systems lecture where we discussed v
 		
 
 		<section class="body">
-			<h3 id="i-want-to">i want to</h3>
-<ul>
-<li><input disabled="" type="checkbox"> apply to 3 jobs (custom resume, cover letter per role)</li>
-</ul>
-<p>i only got one custom application done :(</p>
-<p><del>begin studying for my circuit theory quiz next monday</del> :)</p>
-<p><del>hit chest and triceps in the gym!</del> :)</p>
-<hr>
-<h3 id="i-learned">i learned</h3>
+			<h3 id="i-learned">i learned</h3>
 <p>In the morning I had my operating systems lecture where we discussed various synchronization problems. First, we reviewed
 locks (not review for me becuase I missed the last lecture). Locks are a way to protect critical sections of multithreaded
 code. One way to do this is to disable all interrupts, but this is an insecure method.</p>
