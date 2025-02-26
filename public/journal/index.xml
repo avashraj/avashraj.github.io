@@ -6,8 +6,15 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Feb 2025 22:11:49 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2025 22:00:55 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feb 25 2025</title>
+      <link>avashraj.github.io/journal/feb-25-2025/</link>
+      <pubDate>Tue, 25 Feb 2025 22:00:55 -0800</pubDate>
+      <guid>avashraj.github.io/journal/feb-25-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;Today I woke up at 7 am after going to bed at 11 and I felt awesome. Minus the fact that&#xA;I was really fucking sick. my head and body ached and i couldn&amp;rsquo;t think straight. I had to&#xA;complete my calculator app and even though I felt shitty, I was able to go through it&#xA;much faster compared to yesterday. One error I could not figure out that ChatGPT found for&#xA;me was why when I tried to add two numbers it didn&amp;rsquo;t add but simply combined it. Looking&#xA;back on this now I should have realized instantly. The output was getting concatentated&#xA;because I passed in the numbers as strings! I was so mad at myself that I didn&amp;rsquo;t see that.&#xA;Besides that I didn&amp;rsquo;t learn anything else. I had circuit theory lab where we had to make&#xA;more complex circuits with resistors. Breadboards are pretty cool I wish I had one.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Feb 24 2025</title>
       <link>avashraj.github.io/journal/feb-24-2025/</link>
