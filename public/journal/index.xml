@@ -6,8 +6,15 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2025 22:00:55 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 13:31:07 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Feb 26 2025</title>
+      <link>avashraj.github.io/journal/feb-26-2025/</link>
+      <pubDate>Wed, 26 Feb 2025 13:31:07 -0800</pubDate>
+      <guid>avashraj.github.io/journal/feb-26-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;A thread is the smallest unit of execution in a CPU core(or CPU if there is only one core). One important thread function&#xA;is .join() which allows one thread to wait for another thread to finish before resuming execution. For example, if we&#xA;have two threads(A, B) and thread A attempts to join thread B,  A calls B.join(). Thread A would then be set to a blocked state&#xA;and be placed into B&amp;rsquo;s waiting queue. A would remain in a sleeping state until B finishes execution. Once B is finished&#xA;A gets placed back into the ready queue.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Feb 25 2025</title>
       <link>avashraj.github.io/journal/feb-25-2025/</link>

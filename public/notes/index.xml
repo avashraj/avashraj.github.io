@@ -6,7 +6,14 @@
     <description>Recent content in Notes on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 13:47:49 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSE 150</title>
+      <link>avashraj.github.io/notes/cse-150/</link>
+      <pubDate>Wed, 26 Feb 2025 13:47:49 -0800</pubDate>
+      <guid>avashraj.github.io/notes/cse-150/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;CSE 150 is an operating systems course&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Threads&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

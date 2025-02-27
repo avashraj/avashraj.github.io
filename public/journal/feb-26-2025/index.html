@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Feb 26 2025 - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="i learned
+A thread is the smallest unit of execution in a CPU core(or CPU if there is only one core). One important thread function
+is .join() which allows one thread to wait for another thread to finish before resuming execution. For example, if we
+have two threads(A, B) and thread A attempts to join thread B,  A calls B.join(). Thread A would then be set to a blocked state
+and be placed into B&rsquo;s waiting queue. A would remain in a sleeping state until B finishes execution. Once B is finished
+A gets placed back into the ready queue." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/journal/feb-26-2025/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Feb 26 2025">
+  <meta property="og:description" content="i learned A thread is the smallest unit of execution in a CPU core(or CPU if there is only one core). One important thread function is .join() which allows one thread to wait for another thread to finish before resuming execution. For example, if we have two threads(A, B) and thread A attempts to join thread B, A calls B.join(). Thread A would then be set to a blocked state and be placed into B’s waiting queue. A would remain in a sleeping state until B finishes execution. Once B is finished A gets placed back into the ready queue.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="journal">
+    <meta property="article:published_time" content="2025-02-26T13:31:07-08:00">
+    <meta property="article:modified_time" content="2025-02-26T13:31:07-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Feb 26 2025">
+  <meta name="twitter:description" content="i learned A thread is the smallest unit of execution in a CPU core(or CPU if there is only one core). One important thread function is .join() which allows one thread to wait for another thread to finish before resuming execution. For example, if we have two threads(A, B) and thread A attempts to join thread B, A calls B.join(). Thread A would then be set to a blocked state and be placed into B’s waiting queue. A would remain in a sleeping state until B finishes execution. Once B is finished A gets placed back into the ready queue.">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Feb 26 2025</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<h1 id="i-learned">i learned</h1>
+<p>A thread is the smallest unit of execution in a CPU core(or CPU if there is only one core). One important thread function
+is .join() which allows one thread to wait for another thread to finish before resuming execution. For example, if we
+have two threads(A, B) and thread A attempts to join thread B,  A calls B.join(). Thread A would then be set to a blocked state
+and be placed into B&rsquo;s waiting queue. A would remain in a sleeping state until B finishes execution. Once B is finished
+A gets placed back into the ready queue.</p>
+<p>I began reading about Angular&rsquo;s http client. We can utilize this by injecting it into our application at the root level.
+When we inject the client, we can also pass useful modifications. One that stuck out to me as passing in <code>withFetch()</code> to
+utilize javascript&rsquo;s fetch api instead of XMLHttprequest. Now we can make a service file to define related API routes. We
+can have multiple of these service files to define the many routes our web application needs to call. Now in our Angular
+components, we can &ldquo;subscribe&rdquo; to our routes to call them. We can handle errors in each API route or we can define a global
+error handling service. Finally we can render our fetched data in our template. Angular is a very opiniated system which I
+like because there is a right answer to many common tasks, but I need to look for these answers because I am new to the
+framework.</p>
+<p>In computer vision class, we talked about scene reconstruction given two views/images of the scene. We can do this with
+epipolar geometry and linear triangulation.
+I gotta define some epipolar geometry concepts. Each image has an epipole. An epipole is the point on one of the images that
+intersects the baseline. The baseline is the line in between the center of the two cameras.</p>
+<p>An easy way to take the cross product between two points is to use the skew symmetric matrix with one of the vectors we want
+to take a cross product with. We get the fundamental matrix by crossing an epipole on one point with the homography matrix
+between the two images.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

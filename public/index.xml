@@ -6,8 +6,22 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2025 22:00:55 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 13:47:49 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSE 150</title>
+      <link>avashraj.github.io/notes/cse-150/</link>
+      <pubDate>Wed, 26 Feb 2025 13:47:49 -0800</pubDate>
+      <guid>avashraj.github.io/notes/cse-150/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;CSE 150 is an operating systems course&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Threads&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Feb 26 2025</title>
+      <link>avashraj.github.io/journal/feb-26-2025/</link>
+      <pubDate>Wed, 26 Feb 2025 13:31:07 -0800</pubDate>
+      <guid>avashraj.github.io/journal/feb-26-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;A thread is the smallest unit of execution in a CPU core(or CPU if there is only one core). One important thread function&#xA;is .join() which allows one thread to wait for another thread to finish before resuming execution. For example, if we&#xA;have two threads(A, B) and thread A attempts to join thread B,  A calls B.join(). Thread A would then be set to a blocked state&#xA;and be placed into B&amp;rsquo;s waiting queue. A would remain in a sleeping state until B finishes execution. Once B is finished&#xA;A gets placed back into the ready queue.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Feb 25 2025</title>
       <link>avashraj.github.io/journal/feb-25-2025/</link>
