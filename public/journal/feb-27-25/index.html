@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Feb 27 2025 - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="i learned
+Javascript is a single threaded programming language, so code such as network requests would take a lot of time and block the
+main thread. We can avoid this problem with asynchronous code. We can have long tasks such as network requests happen in
+the background without blocking the main thread.
+Two ways of handling asynchronous data requests are promises, a native JS concept and rxjs observables. Angular uses
+observables primarily in their http system. A promise can get data over a period of time which will return response data
+or an error object. They can only return a single value/object. Promises also cannot handle streams of data. Data streaming
+is sending a large file as chunks at a time. Promises will also fetch data even if no one uses that data." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/journal/feb-27-25/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Feb 27 2025">
+  <meta property="og:description" content="i learned Javascript is a single threaded programming language, so code such as network requests would take a lot of time and block the main thread. We can avoid this problem with asynchronous code. We can have long tasks such as network requests happen in the background without blocking the main thread.
+Two ways of handling asynchronous data requests are promises, a native JS concept and rxjs observables. Angular uses observables primarily in their http system. A promise can get data over a period of time which will return response data or an error object. They can only return a single value/object. Promises also cannot handle streams of data. Data streaming is sending a large file as chunks at a time. Promises will also fetch data even if no one uses that data.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="journal">
+    <meta property="article:published_time" content="2025-02-27T23:02:04-08:00">
+    <meta property="article:modified_time" content="2025-02-27T23:02:04-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Feb 27 2025">
+  <meta name="twitter:description" content="i learned Javascript is a single threaded programming language, so code such as network requests would take a lot of time and block the main thread. We can avoid this problem with asynchronous code. We can have long tasks such as network requests happen in the background without blocking the main thread.
+Two ways of handling asynchronous data requests are promises, a native JS concept and rxjs observables. Angular uses observables primarily in their http system. A promise can get data over a period of time which will return response data or an error object. They can only return a single value/object. Promises also cannot handle streams of data. Data streaming is sending a large file as chunks at a time. Promises will also fetch data even if no one uses that data.">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Feb 27 2025</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<h1 id="i-learned">i learned</h1>
+<p>Javascript is a single threaded programming language, so code such as network requests would take a lot of time and block the
+main thread. We can avoid this problem with asynchronous code. We can have long tasks such as network requests happen in
+the background without blocking the main thread.</p>
+<p>Two ways of handling asynchronous data requests are promises, a native JS concept and rxjs observables. Angular uses
+observables primarily in their http system. A promise can get data over a period of time which will return response data
+or an error object. They can only return a single value/object. Promises also cannot handle streams of data. Data streaming
+is sending a large file as chunks at a time. Promises will also fetch data even if no one uses that data.</p>
+<p>An rxjs observable is also a wrapper around asynchronous data. Observable can return as many items as we want, handle data
+streaming, and will only return data if someone needs it. This is because after an observable is defined, someone needs to
+<em>subscribe</em> to it to actually call it. These subscriptions can be cancellable too.</p>
+<p>In Angular, all http requests return an rxjs observable. This way components will subscribe to these observables if they
+need data. Httpclient observables are like blueprints for actaul server requests. Once we get a response in Angular, we
+can use either parts or the whole response. A clever pattern we can use is to subscribe to our requests through an async
+pipe. This way, if we navigate off the page, we cancel the request automatically. We do this in a components template.</p>
+<p>Some further questions I had were how does js have code running in the background if it is single threaded? Also, Are parent
+components supposed to subscribe and pass data or are children. I am a little lost on the best way to flow data throughout
+our web application</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>
