@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Hough Transform - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="from CSE185
+from Mar 01 2025
+The hough transform is one way to find lines in images. It can be done after edge detection because we need an edge map.
+It can withstand edges not being connected and objects not being completely in the image. The problem is given edge points
+for an image, how can we find lines?
+First we can think of the line equation
+$$
+y = mx &#43; b \Leftrightarrow b = y - mx
+$$" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/cse185/hough-transform/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Hough Transform">
+  <meta property="og:description" content="from CSE185
+from Mar 01 2025
+The hough transform is one way to find lines in images. It can be done after edge detection because we need an edge map. It can withstand edges not being connected and objects not being completely in the image. The problem is given edge points for an image, how can we find lines?
+First we can think of the line equation $$ y = mx &#43; b \Leftrightarrow b = y - mx $$">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cse185">
+    <meta property="article:published_time" content="2025-03-01T19:45:43-08:00">
+    <meta property="article:modified_time" content="2025-03-01T19:45:43-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hough Transform">
+  <meta name="twitter:description" content="from CSE185
+from Mar 01 2025
+The hough transform is one way to find lines in images. It can be done after edge detection because we need an edge map. It can withstand edges not being connected and objects not being completely in the image. The problem is given edge points for an image, how can we find lines?
+First we can think of the line equation $$ y = mx &#43; b \Leftrightarrow b = y - mx $$">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Hough Transform</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p><strong>from <a href="avashraj.github.io/notes/cse185/">CSE185</a></strong></p>
+<p><strong>from <a href="avashraj.github.io/journal/mar-01-2025/">Mar 01 2025</a></strong></p>
+<p>The <strong>hough transform</strong> is one way to find lines in images. It can be done after edge detection because we need an edge map.
+It can withstand edges not being connected and objects not being completely in the image. The problem is given edge points
+for an image, how can we find lines?</p>
+<p>First we can think of the line equation
+$$
+y = mx + b \Leftrightarrow b = y - mx
+$$</p>
+<p>The original equation is in terms of x and y while the new one is in terms of m and b. This is because for every point in
+the edge map we know its x and y values. This new equation/space is the <strong>hough space</strong>. Interesting things happen with
+points and lines going back and forth from the image space(OG x,y space) and the hough space.</p>
+<ul>
+<li>a point in the image space is a line in the hough space</li>
+<li>a line in the image space is a point in the hough space</li>
+</ul>
+<p>If we have many points that should lie on the same line, those points in image space(lines in hough space) should meet at a
+point. This point is the line we are searching for. We want to find the point in hough space with the greatest number of
+intersections. There is a problem though. The slope m can be any real number from $-\infty \leq m \leq \infty$ This will
+create a massive accumulator array(i havent gotten to it yet but i will). We need a different equation to represent lines.
+We can use polar coordinates with
+$$d = xcos(\theta) + ysin(\theta)$$
+Now points in image space make sin curves in hough space. Points in hough space are still lines in image space.
+To do this algorithmically we</p>
+<ul>
+<li>initialize the accumulator array which is where we track the sin curves in hough space</li>
+<li>for each edge point, add one to its sin curve in the accumulator array</li>
+<li>the point $Hough(d, \theta)$ corresponds to the line $d = xcos(\theta) + ysin(\theta)$ that we are looking for</li>
+</ul>
+<p>This also applies to circles. If we know the radius we can parameterize circles as:
+$$
+Image(x,y) = (x - a)^2 + (y - b)^2 = r^2 \Leftrightarrow (a - x)^2 + (b - y)^2 = r^2 = Hough(a,b)
+$$
+The same strategy applies to get the circle, we take the point with the greatest number of intersections. If we do not know
+the radius, we have to add r as a parameter too. This would make a cone in hough space. The more parameters, the bigger our
+accumulator arrays become and our strategy becomes less efficient</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

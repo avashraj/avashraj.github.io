@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSE185s on putergoon.com</title>
+    <link>avashraj.github.io/cse185/</link>
+    <description>Recent content in CSE185s on putergoon.com</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Mar 2025 19:45:43 -0800</lastBuildDate>
+    <atom:link href="avashraj.github.io/cse185/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hough Transform</title>
+      <link>avashraj.github.io/cse185/hough-transform/</link>
+      <pubDate>Sat, 01 Mar 2025 19:45:43 -0800</pubDate>
+      <guid>avashraj.github.io/cse185/hough-transform/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/journal/mar-01-2025/&#34;&gt;Mar 01 2025&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;hough transform&lt;/strong&gt; is one way to find lines in images. It can be done after edge detection because we need an edge map.&#xA;It can withstand edges not being connected and objects not being completely in the image. The problem is given edge points&#xA;for an image, how can we find lines?&lt;/p&gt;&#xA;&lt;p&gt;First we can think of the line equation&#xA;$$&#xA;y = mx + b \Leftrightarrow b = y - mx&#xA;$$&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
