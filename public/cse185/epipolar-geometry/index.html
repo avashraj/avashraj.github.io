@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Epipolar Geometry - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="from Computer Vision
+Similar to triangulation, we can find the point in a 3d world with two images capturing that 3d scene. How tho? The problem
+is: given two images of our scene, the camera matrices $M$ and $M&rsquo;$ how can we find the irl point $P$?
+If we draw rays from the image point in img1 and rays from image point in img2, they will not exactly meet at $P$. We can
+take a linear approach and solve for the points closest to both of the rays and P." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/cse185/epipolar-geometry/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Epipolar Geometry">
+  <meta property="og:description" content="from Computer Vision
+Similar to triangulation, we can find the point in a 3d world with two images capturing that 3d scene. How tho? The problem is: given two images of our scene, the camera matrices $M$ and $M’$ how can we find the irl point $P$? If we draw rays from the image point in img1 and rays from image point in img2, they will not exactly meet at $P$. We can take a linear approach and solve for the points closest to both of the rays and P.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cse185">
+    <meta property="article:published_time" content="2025-03-02T14:13:45-08:00">
+    <meta property="article:modified_time" content="2025-03-02T14:13:45-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Epipolar Geometry">
+  <meta name="twitter:description" content="from Computer Vision
+Similar to triangulation, we can find the point in a 3d world with two images capturing that 3d scene. How tho? The problem is: given two images of our scene, the camera matrices $M$ and $M’$ how can we find the irl point $P$? If we draw rays from the image point in img1 and rays from image point in img2, they will not exactly meet at $P$. We can take a linear approach and solve for the points closest to both of the rays and P.">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Epipolar Geometry</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p>from <a href="avashraj.github.io/notes/cse185/">Computer Vision</a></p>
+<p>Similar to triangulation, we can find the point in a 3d world with two images capturing that 3d scene. How tho? The problem
+is: given two images of our scene, the camera matrices $M$ and $M&rsquo;$ how can we find the irl point $P$?
+If we draw rays from the image point in img1 and rays from image point in img2, they will not exactly meet at $P$. We can
+take a linear approach and solve for the points closest to both of the rays and P.</p>
+<p>Epipolar geometry is how two images capturing the same point relate. We have the camera centers $C$, $C&rsquo;$, their image planes,
+the point $P$ in space, and the associate image points $x$ and $x&rsquo;$. All of these lie on a common plane $\pi$</p>
+<p><strong>baseline</strong> - the line joining the two camera centers</p>
+<p><strong>epipole</strong> - the point of intersection of the baseline with the image plane</p>
+<p><strong>epipolar plane</strong> - an epipolar plane contains a baseline</p>
+<p><strong>epipolar line</strong> - the intersection of an epipolar plane with the image plane</p>
+<p>If the two cameras face the same direction, and the images are just translated to the left and the right, the intersection
+of the baseline with the image plane is at infinity. All epipolar lines are parallel and the epipoles are at infinity.
+Stereo correspondence is finding matching pairs of points in two images taken from slightly different viewpoints. It asks
+the question, which point in the left image corresponds to the point in the right image?</p>
+<p>Epipolar geometry gives us an advantage because a point on img1 of $P$ can only be on the epipolar line $l'$</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

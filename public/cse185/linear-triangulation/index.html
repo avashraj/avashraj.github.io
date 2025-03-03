@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Linear Triangulation - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="from CSE185
+Imagine a scene like a library. We have a camera taking a picture of the scene. We displace the camera to the right by
+d and take another picture of the scence. How can we estimate the coordinates of a point on the scene in terms of the
+axis where both of the cameras lie, and the depth of the image or how far in front of the camera the point is?" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/cse185/linear-triangulation/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Linear Triangulation">
+  <meta property="og:description" content="from CSE185
+Imagine a scene like a library. We have a camera taking a picture of the scene. We displace the camera to the right by d and take another picture of the scence. How can we estimate the coordinates of a point on the scene in terms of the axis where both of the cameras lie, and the depth of the image or how far in front of the camera the point is?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cse185">
+    <meta property="article:published_time" content="2025-03-02T13:29:31-08:00">
+    <meta property="article:modified_time" content="2025-03-02T13:29:31-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linear Triangulation">
+  <meta name="twitter:description" content="from CSE185
+Imagine a scene like a library. We have a camera taking a picture of the scene. We displace the camera to the right by d and take another picture of the scence. How can we estimate the coordinates of a point on the scene in terms of the axis where both of the cameras lie, and the depth of the image or how far in front of the camera the point is?">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Linear Triangulation</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p><strong>from <a href="avashraj.github.io/notes/cse185/">CSE185</a></strong></p>
+<p>Imagine a scene like a library. We have a camera taking a picture of the scene. We displace the camera to the right by
+<strong>d</strong> and take another picture of the scence. How can we estimate the coordinates of a point on the scene in terms of the
+axis where both of the cameras lie, and the depth of the image or how far in front of the camera the point is?</p>
+<p>First some notation: $(X,Z)$ the irl point we are trying to find, $d$ the baseline or the displacement of the second camera
+from the first, $x_L$ and $x_R$ the center of their associated image at a distance $f$ in front of the cameras. If we rewrite
+$x_L$ and $x_R$ in terms of the other variables we would get
+$$
+x_L = f \frac{X}{Z} \
+$$
+$$
+x_R = f \frac{X - d}{Z}
+$$</p>
+<p>If we keep doing some freaky algebra we would get
+$$
+X = x_L \frac{d}{d&rsquo;}
+$$
+$$
+Z = f \frac{d}{d&rsquo;}
+$$</p>
+<p>here d&rsquo; is the disparity. Disparity is the difference in pixel locations of the scene we are capturing in the two images. We
+can visualize this by holding a finger in front of our eyes and closing one eye. If we close our open eye and open the other
+we can see a shift in position of our finger.</p>
+<p>We know that the point in our images is equal to our camera matrix multiplied to the real world point. Some more notation is
+$\tilde{x}$ and $\tilde{x&rsquo;}$ are our image points, $P$ and $P&rsquo;$ are our camera matrices, and $\tilde{X}$ is our real world
+point.</p>
+<p>$$\tilde{x} = P \tilde{X}$$
+$$\tilde{x&rsquo;} = P&rsquo; \tilde{X}$$</p>
+<p>If we take the cross product of $\tilde{x}$ and $P \tilde{X}$ we woulto make it a 4x1 matrixd get 0 because these values are collinear(idk what that
+means yet). Theres this cool trick where if we expand the cross product, we are able to reduce one row because it is
+in terms of another row. (I am too lazy to write the latex to show that right now i got way more to study).
+We can now rewrite this in the form of $Ax = 0$. If we do this to the other image, we can combine the As from both images.
+This is the overconstrained problem for the null space where we can take the SVD to get the eigenvector with the smallest
+eigenvalue. This vector is our $\tilde{X}$. This was all in 2D though.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

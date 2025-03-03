@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>avashraj.github.io/jounral/</loc>
+    <lastmod>2025-03-03T12:31:29-08:00</lastmod>
+  </url><url>
+    <loc>avashraj.github.io/jounral/mar-02-2025/</loc>
+    <lastmod>2025-03-03T12:31:29-08:00</lastmod>
+  </url><url>
     <loc>avashraj.github.io/cse185/</loc>
-    <lastmod>2025-03-01T19:45:43-08:00</lastmod>
+    <lastmod>2025-03-02T15:31:26-08:00</lastmod>
+  </url><url>
+    <loc>avashraj.github.io/cse185/fundamental-matrix/</loc>
+    <lastmod>2025-03-02T15:31:26-08:00</lastmod>
+  </url><url>
+    <loc>avashraj.github.io/cse185/epipolar-geometry/</loc>
+    <lastmod>2025-03-02T14:13:45-08:00</lastmod>
+  </url><url>
+    <loc>avashraj.github.io/cse185/linear-triangulation/</loc>
+    <lastmod>2025-03-02T13:29:31-08:00</lastmod>
   </url><url>
     <loc>avashraj.github.io/cse185/hough-transform/</loc>
     <lastmod>2025-03-01T19:45:43-08:00</lastmod>

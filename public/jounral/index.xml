@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jounrals on putergoon.com</title>
+    <link>avashraj.github.io/jounral/</link>
+    <description>Recent content in Jounrals on putergoon.com</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Mar 2025 12:31:29 -0800</lastBuildDate>
+    <atom:link href="avashraj.github.io/jounral/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 02 2025</title>
+      <link>avashraj.github.io/jounral/mar-02-2025/</link>
+      <pubDate>Mon, 03 Mar 2025 12:31:29 -0800</pubDate>
+      <guid>avashraj.github.io/jounral/mar-02-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I studied the hough transform, a way to find lines in images by creating a &amp;ldquo;parameter&amp;rdquo; space by rearranging the terms in&#xA;the line equation. Points in normal space correspond to lines in &amp;ldquo;parameter&amp;rdquo; space and we can find our line by grabbing the&#xA;point with the most lines intersecting it in &amp;ldquo;parameter&amp;rdquo; space&amp;quot;. This won&amp;rsquo;t work so we need to use polar coordinates.&lt;/p&gt;&#xA;&lt;p&gt;If we have two images and we want to find a real world point, linear triangulation is a way to do this. This is unrealistic&#xA;as this does not work with 2d images and a 3d scene. We need epipolar geometry for this. Epipolar geometry relates a&#xA;3d point in the world, two cameras, their image planes on the same plane. The fundamental matrix is the algabraic representation&#xA;of this. It is formed with the skew symmetric matrix of an epipolar line multiplied with the 2d homography relating the two&#xA;images. We need at least 7 corresponding points to form the fundamental matrix. I have written more in my computer vision notes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

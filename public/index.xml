@@ -6,8 +6,36 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Mar 2025 19:45:43 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Mar 2025 12:31:29 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 02 2025</title>
+      <link>avashraj.github.io/jounral/mar-02-2025/</link>
+      <pubDate>Mon, 03 Mar 2025 12:31:29 -0800</pubDate>
+      <guid>avashraj.github.io/jounral/mar-02-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I studied the hough transform, a way to find lines in images by creating a &amp;ldquo;parameter&amp;rdquo; space by rearranging the terms in&#xA;the line equation. Points in normal space correspond to lines in &amp;ldquo;parameter&amp;rdquo; space and we can find our line by grabbing the&#xA;point with the most lines intersecting it in &amp;ldquo;parameter&amp;rdquo; space&amp;quot;. This won&amp;rsquo;t work so we need to use polar coordinates.&lt;/p&gt;&#xA;&lt;p&gt;If we have two images and we want to find a real world point, linear triangulation is a way to do this. This is unrealistic&#xA;as this does not work with 2d images and a 3d scene. We need epipolar geometry for this. Epipolar geometry relates a&#xA;3d point in the world, two cameras, their image planes on the same plane. The fundamental matrix is the algabraic representation&#xA;of this. It is formed with the skew symmetric matrix of an epipolar line multiplied with the 2d homography relating the two&#xA;images. We need at least 7 corresponding points to form the fundamental matrix. I have written more in my computer vision notes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fundamental Matrix</title>
+      <link>avashraj.github.io/cse185/fundamental-matrix/</link>
+      <pubDate>Sun, 02 Mar 2025 15:31:26 -0800</pubDate>
+      <guid>avashraj.github.io/cse185/fundamental-matrix/</guid>
+      <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;Computer Vision&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The fundamental matrix $F$ is the algebraic representation of epipolar geometry. It is independant of the scene and can be&#xA;computed using corresponding points. We don&amp;rsquo;t even need to know the camera intrinsics or extrinsics. There will be a 2d homography&#xA;$H_\pi$ mapping each $x_i$ to $x&amp;rsquo;_i$ where $x_i$ is a point in img1 and $x&amp;rsquo;_i$ is a point in img2.&lt;/p&gt;&#xA;&lt;p&gt;The epipolar line in the image plane $l&amp;rsquo;$ connects $e&amp;rsquo;$ and $x&amp;rsquo;$ can be written as the cross product between the points. We can make a&#xA;skew symmetric matrix with $e&amp;rsquo;$ to make the cross operation part of a matrix multiplication like $[e&amp;rsquo;]_x$. Now&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Epipolar Geometry</title>
+      <link>avashraj.github.io/cse185/epipolar-geometry/</link>
+      <pubDate>Sun, 02 Mar 2025 14:13:45 -0800</pubDate>
+      <guid>avashraj.github.io/cse185/epipolar-geometry/</guid>
+      <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;Computer Vision&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Similar to triangulation, we can find the point in a 3d world with two images capturing that 3d scene. How tho? The problem&#xA;is: given two images of our scene, the camera matrices $M$ and $M&amp;rsquo;$ how can we find the irl point $P$?&#xA;If we draw rays from the image point in img1 and rays from image point in img2, they will not exactly meet at $P$. We can&#xA;take a linear approach and solve for the points closest to both of the rays and P.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linear Triangulation</title>
+      <link>avashraj.github.io/cse185/linear-triangulation/</link>
+      <pubDate>Sun, 02 Mar 2025 13:29:31 -0800</pubDate>
+      <guid>avashraj.github.io/cse185/linear-triangulation/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Imagine a scene like a library. We have a camera taking a picture of the scene. We displace the camera to the right by&#xA;&lt;strong&gt;d&lt;/strong&gt; and take another picture of the scence. How can we estimate the coordinates of a point on the scene in terms of the&#xA;axis where both of the cameras lie, and the depth of the image or how far in front of the camera the point is?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hough Transform</title>
       <link>avashraj.github.io/cse185/hough-transform/</link>
@@ -41,7 +69,7 @@
       <link>avashraj.github.io/notes/cse185/</link>
       <pubDate>Wed, 26 Feb 2025 13:54:57 -0800</pubDate>
       <guid>avashraj.github.io/notes/cse185/</guid>
-      <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Canny Edge Detector]&lt;/li&gt;&#xA;&lt;li&gt;[Harris Corner]&lt;/li&gt;&#xA;&lt;li&gt;[Homography]&lt;/li&gt;&#xA;&lt;li&gt;[RANSAC]&lt;/li&gt;&#xA;&lt;li&gt;[Reprojection Error vs Transfer Error]&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;[Linear Triangulation]&lt;/li&gt;&#xA;&lt;li&gt;[Epipolar Geometry]&lt;/li&gt;&#xA;&lt;li&gt;[Fundamental Matrix]&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Canny Edge Detector]&lt;/li&gt;&#xA;&lt;li&gt;[Harris Corner]&lt;/li&gt;&#xA;&lt;li&gt;[Homography]&lt;/li&gt;&#xA;&lt;li&gt;[RANSAC]&lt;/li&gt;&#xA;&lt;li&gt;[Reprojection Error vs Transfer Error]&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/linear-triangulation/&#34;&gt;Linear Triangulation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/epipolar-geometry/&#34;&gt;Epipolar Geometry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/fundamental-matrix/&#34;&gt;Fundamental Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Operating Systems</title>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Fundamental Matrix - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="from Computer Vision
+The fundamental matrix $F$ is the algebraic representation of epipolar geometry. It is independant of the scene and can be
+computed using corresponding points. We don&rsquo;t even need to know the camera intrinsics or extrinsics. There will be a 2d homography
+$H_\pi$ mapping each $x_i$ to $x&rsquo;_i$ where $x_i$ is a point in img1 and $x&rsquo;_i$ is a point in img2.
+The epipolar line in the image plane $l&rsquo;$ connects $e&rsquo;$ and $x&rsquo;$ can be written as the cross product between the points. We can make a
+skew symmetric matrix with $e&rsquo;$ to make the cross operation part of a matrix multiplication like $[e&rsquo;]_x$. Now" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/cse185/fundamental-matrix/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Fundamental Matrix">
+  <meta property="og:description" content="from Computer Vision
+The fundamental matrix $F$ is the algebraic representation of epipolar geometry. It is independant of the scene and can be computed using corresponding points. We don’t even need to know the camera intrinsics or extrinsics. There will be a 2d homography $H_\pi$ mapping each $x_i$ to $x’_i$ where $x_i$ is a point in img1 and $x’_i$ is a point in img2.
+The epipolar line in the image plane $l’$ connects $e’$ and $x’$ can be written as the cross product between the points. We can make a skew symmetric matrix with $e’$ to make the cross operation part of a matrix multiplication like $[e’]_x$. Now">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cse185">
+    <meta property="article:published_time" content="2025-03-02T15:31:26-08:00">
+    <meta property="article:modified_time" content="2025-03-02T15:31:26-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fundamental Matrix">
+  <meta name="twitter:description" content="from Computer Vision
+The fundamental matrix $F$ is the algebraic representation of epipolar geometry. It is independant of the scene and can be computed using corresponding points. We don’t even need to know the camera intrinsics or extrinsics. There will be a 2d homography $H_\pi$ mapping each $x_i$ to $x’_i$ where $x_i$ is a point in img1 and $x’_i$ is a point in img2.
+The epipolar line in the image plane $l’$ connects $e’$ and $x’$ can be written as the cross product between the points. We can make a skew symmetric matrix with $e’$ to make the cross operation part of a matrix multiplication like $[e’]_x$. Now">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Fundamental Matrix</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p>from <a href="avashraj.github.io/notes/cse185/">Computer Vision</a></p>
+<p>The fundamental matrix $F$ is the algebraic representation of epipolar geometry. It is independant of the scene and can be
+computed using corresponding points. We don&rsquo;t even need to know the camera intrinsics or extrinsics. There will be a 2d homography
+$H_\pi$ mapping each $x_i$ to $x&rsquo;_i$ where $x_i$ is a point in img1 and $x&rsquo;_i$ is a point in img2.</p>
+<p>The epipolar line in the image plane $l&rsquo;$ connects $e&rsquo;$ and $x&rsquo;$ can be written as the cross product between the points. We can make a
+skew symmetric matrix with $e&rsquo;$ to make the cross operation part of a matrix multiplication like $[e&rsquo;]_x$. Now</p>
+<p>$$
+l&rsquo; = e&rsquo; \times x&rsquo; = [e&rsquo;]_x x'
+$$</p>
+<p>$$
+x&rsquo; = H_\pi x
+$$</p>
+<p>The benefit is that we can chain the cross products now. The fundamental matrix is the skew symmetric matrix of $e&rsquo;$ multiplied
+to the homography matrix $H_\pi$. If $x$ and $x&rsquo;$ are corresponding points, $X&rsquo;^T Fx = 0$.</p>
+<p>$l&rsquo; = Fx$ is the epipolar line corresponding to $x$.</p>
+<p>$l = F^T e&rsquo; = 0$ is the epipolar line corresponding to $x'$</p>
+<p>$F e = 0$</p>
+<p>$F^T e&rsquo; = 0$</p>
+<p>Each corresponding point pair gives one equation and we need at least 7 correspondences to compute F.</p>
+<p>$H_\pi$ has rank 3, $[e&rsquo;]_x$ has rank 2, and F has rank 2</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>
