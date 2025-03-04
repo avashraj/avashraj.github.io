@@ -6,8 +6,22 @@
     <description>Recent content in CSE185s on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Mar 2025 15:31:26 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Mar 2025 15:46:03 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/cse185/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ransac</title>
+      <link>avashraj.github.io/cse185/ransac/</link>
+      <pubDate>Mon, 03 Mar 2025 15:46:03 -0800</pubDate>
+      <guid>avashraj.github.io/cse185/ransac/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;When we do SIFT, we get a bunch of features on each image. When we get matching features, many of these features may be&#xA;matching according to SIFT, but they do not actually correspond to their respective points on the images. We need a way to&#xA;make sure  the models(homography matrices) generated from those matches are actually good.&lt;/p&gt;&#xA;&lt;p&gt;We can use RANSAC to do this. The steps of ransac are as follows:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Homography</title>
+      <link>avashraj.github.io/cse185/homography/</link>
+      <pubDate>Mon, 03 Mar 2025 14:24:15 -0800</pubDate>
+      <guid>avashraj.github.io/cse185/homography/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;A homography is a transformation matrix that takes you from one plane to another plane through a point of projection. The&#xA;problem we are trying to solve is given a set of matching features/points in 2d images, how can we find a homography that best&#xA;agrees with these points?&lt;/p&gt;&#xA;&lt;p&gt;First when would this homography $H$ be valid?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;when we are taking images of a plane&lt;/li&gt;&#xA;&lt;li&gt;when the scene is very far(assumed at infinity) so it is a plane&lt;/li&gt;&#xA;&lt;li&gt;when images are taken from the same point&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;How can we compute $H$?&#xA;The homography is a 3x3 matrix that transforms a point from the source image to the destination image. We can only compute&#xA;homography up to a scale factor so even though there are 9 values, we have 8 degrees of freedom. We would stack matching&#xA;points on top of each other to form a overdetermined system of equations. The stacked points would be $A$ in the equation,&#xA;$Ah = 0$. We have a constraint $||h||^2 = 1$ so we do not get the trivial solution. We want to minimize $||Ah||^2 \text{ such that }&#xA;||h||^2 =1$. With some math:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Fundamental Matrix</title>
       <link>avashraj.github.io/cse185/fundamental-matrix/</link>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Ransac - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="from CSE185
+When we do SIFT, we get a bunch of features on each image. When we get matching features, many of these features may be
+matching according to SIFT, but they do not actually correspond to their respective points on the images. We need a way to
+make sure  the models(homography matrices) generated from those matches are actually good.
+We can use RANSAC to do this. The steps of ransac are as follows:" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/cse185/ransac/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Ransac">
+  <meta property="og:description" content="from CSE185
+When we do SIFT, we get a bunch of features on each image. When we get matching features, many of these features may be matching according to SIFT, but they do not actually correspond to their respective points on the images. We need a way to make sure the models(homography matrices) generated from those matches are actually good.
+We can use RANSAC to do this. The steps of ransac are as follows:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cse185">
+    <meta property="article:published_time" content="2025-03-03T15:46:03-08:00">
+    <meta property="article:modified_time" content="2025-03-03T15:46:03-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ransac">
+  <meta name="twitter:description" content="from CSE185
+When we do SIFT, we get a bunch of features on each image. When we get matching features, many of these features may be matching according to SIFT, but they do not actually correspond to their respective points on the images. We need a way to make sure the models(homography matrices) generated from those matches are actually good.
+We can use RANSAC to do this. The steps of ransac are as follows:">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Ransac</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p><strong>from <a href="avashraj.github.io/notes/cse185/">CSE185</a></strong></p>
+<p>When we do SIFT, we get a bunch of features on each image. When we get matching features, many of these features may be
+matching according to SIFT, but they do not actually correspond to their respective points on the images. We need a way to
+make sure  the models(homography matrices) generated from those matches are actually good.</p>
+<p>We can use RANSAC to do this. The steps of ransac are as follows:</p>
+<ol>
+<li>randomly choose the minimum number of samples needed to fit a model. For homography, we need 4 matching points</li>
+<li>fit the model/create our homography matrix</li>
+<li>count the number of datapoints that actually fit the model. the points that fit the model are inliers.</li>
+<li>repeat steps 1-3 N times</li>
+<li>choose the model that has the largest number of inliers</li>
+<li>recompute the model with all of the inliers</li>
+</ol>
+<p>How do we count the number of datapoints that actually fit the model?</p>
+<p><strong>Symmetric transfer error</strong>
+$$
+d(x,H^-1 , x&rsquo;)^2 + d(x&rsquo;, Hx)^2
+$$</p>
+<p>This forumla is asking what is the distance between the first point and the inverse homography multiplied by the corresponding
+point on the other image. We are trying to find out how &ldquo;off&rdquo; our homography was for that point. The second part of the formula
+is the same thing. How far off was the actual second point from where we estimated that point to be? We square both of these
+distances and add them to get our symmetric transfer error for a homography that relates two specific points together.
+This method is computationally easier than reprojection but is less accurate</p>
+<p><strong>Reprojection error</strong>
+With reprojection, we compute the 3D point that corresponds to a pair of matching image points. We then reproject that point
+back onto both images and calculate the euclidiean distance between the observed and reprojected points.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

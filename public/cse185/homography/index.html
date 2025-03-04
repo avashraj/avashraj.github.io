@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Homography - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="from CSE185
+A homography is a transformation matrix that takes you from one plane to another plane through a point of projection. The
+problem we are trying to solve is given a set of matching features/points in 2d images, how can we find a homography that best
+agrees with these points?
+First when would this homography $H$ be valid?
+
+when we are taking images of a plane
+when the scene is very far(assumed at infinity) so it is a plane
+when images are taken from the same point
+
+How can we compute $H$?
+The homography is a 3x3 matrix that transforms a point from the source image to the destination image. We can only compute
+homography up to a scale factor so even though there are 9 values, we have 8 degrees of freedom. We would stack matching
+points on top of each other to form a overdetermined system of equations. The stacked points would be $A$ in the equation,
+$Ah = 0$. We have a constraint $||h||^2 = 1$ so we do not get the trivial solution. We want to minimize $||Ah||^2 \text{ such that }
+||h||^2 =1$. With some math:" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/cse185/homography/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Homography">
+  <meta property="og:description" content="from CSE185
+A homography is a transformation matrix that takes you from one plane to another plane through a point of projection. The problem we are trying to solve is given a set of matching features/points in 2d images, how can we find a homography that best agrees with these points?
+First when would this homography $H$ be valid?
+when we are taking images of a plane when the scene is very far(assumed at infinity) so it is a plane when images are taken from the same point How can we compute $H$? The homography is a 3x3 matrix that transforms a point from the source image to the destination image. We can only compute homography up to a scale factor so even though there are 9 values, we have 8 degrees of freedom. We would stack matching points on top of each other to form a overdetermined system of equations. The stacked points would be $A$ in the equation, $Ah = 0$. We have a constraint $||h||^2 = 1$ so we do not get the trivial solution. We want to minimize $||Ah||^2 \text{ such that } ||h||^2 =1$. With some math:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="cse185">
+    <meta property="article:published_time" content="2025-03-03T14:24:15-08:00">
+    <meta property="article:modified_time" content="2025-03-03T14:24:15-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Homography">
+  <meta name="twitter:description" content="from CSE185
+A homography is a transformation matrix that takes you from one plane to another plane through a point of projection. The problem we are trying to solve is given a set of matching features/points in 2d images, how can we find a homography that best agrees with these points?
+First when would this homography $H$ be valid?
+when we are taking images of a plane when the scene is very far(assumed at infinity) so it is a plane when images are taken from the same point How can we compute $H$? The homography is a 3x3 matrix that transforms a point from the source image to the destination image. We can only compute homography up to a scale factor so even though there are 9 values, we have 8 degrees of freedom. We would stack matching points on top of each other to form a overdetermined system of equations. The stacked points would be $A$ in the equation, $Ah = 0$. We have a constraint $||h||^2 = 1$ so we do not get the trivial solution. We want to minimize $||Ah||^2 \text{ such that } ||h||^2 =1$. With some math:">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Homography</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p><strong>from <a href="avashraj.github.io/notes/cse185/">CSE185</a></strong></p>
+<p>A homography is a transformation matrix that takes you from one plane to another plane through a point of projection. The
+problem we are trying to solve is given a set of matching features/points in 2d images, how can we find a homography that best
+agrees with these points?</p>
+<p>First when would this homography $H$ be valid?</p>
+<ul>
+<li>when we are taking images of a plane</li>
+<li>when the scene is very far(assumed at infinity) so it is a plane</li>
+<li>when images are taken from the same point</li>
+</ul>
+<p>How can we compute $H$?
+The homography is a 3x3 matrix that transforms a point from the source image to the destination image. We can only compute
+homography up to a scale factor so even though there are 9 values, we have 8 degrees of freedom. We would stack matching
+points on top of each other to form a overdetermined system of equations. The stacked points would be $A$ in the equation,
+$Ah = 0$. We have a constraint $||h||^2 = 1$ so we do not get the trivial solution. We want to minimize $||Ah||^2 \text{ such that }
+||h||^2 =1$. With some math:</p>
+<p>$$
+||Ah||^2 = (Ah)^T(AH) = h^T A^T Ah \text{ such that } h^th = 1
+$$</p>
+<p>We now make a loss function:
+$$
+L(h, \lambda) = h^T A^t Ah - \lambda(h^T h - 1)
+$$</p>
+<p>and derive it to get</p>
+<p>$$
+2A^t Ah - 2\lambda h = 0
+$$</p>
+<p>which is the eigenvalue problem</p>
+<p>If we find the eigenvector with the smallest eigenvalue, we have our homography vector h. We can rearrange it to a 3x3 matrix
+to get $H$.</p>
+<p>Overall we</p>
+<ol>
+<li>use SIFT to get features</li>
+<li>find matching features between the two points</li>
+<li>make A by stacking source and destination image points</li>
+<li>find the eigenvector with the smallest eigenvalue to get $H$</li>
+</ol>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>
