@@ -6,8 +6,15 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Mar 2025 12:41:08 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2025 23:42:07 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 04 2025</title>
+      <link>avashraj.github.io/journal/mar-04-2025/</link>
+      <pubDate>Tue, 04 Mar 2025 23:42:07 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-04-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I began studying for my circuit theory midterm next Wednesday. Ohm&amp;rsquo;s law is $V = IR$. It states that the voltage across a&#xA;resistor is equal to the current across if multiplied by the resistance. If we have two resistors in series, to get the&#xA;equivalent resistance we simply add the two resistances together. If we have two resistors in parallel, we do&#xA;$$&#xA;\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}&#xA;$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 02 2025</title>
       <link>avashraj.github.io/journal/mar-02-2025/</link>

@@ -6,8 +6,15 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Mar 2025 22:33:12 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2025 23:42:07 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 04 2025</title>
+      <link>avashraj.github.io/journal/mar-04-2025/</link>
+      <pubDate>Tue, 04 Mar 2025 23:42:07 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-04-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I began studying for my circuit theory midterm next Wednesday. Ohm&amp;rsquo;s law is $V = IR$. It states that the voltage across a&#xA;resistor is equal to the current across if multiplied by the resistance. If we have two resistors in series, to get the&#xA;equivalent resistance we simply add the two resistances together. If we have two resistors in parallel, we do&#xA;$$&#xA;\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}&#xA;$$&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 03 2025</title>
       <link>avashraj.github.io/mar-03-2025/</link>
@@ -93,18 +100,18 @@
       <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/homography/&#34;&gt;Homography&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/ransac/&#34;&gt;RANSAC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/linear-triangulation/&#34;&gt;Linear Triangulation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/epipolar-geometry/&#34;&gt;Epipolar Geometry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/fundamental-matrix/&#34;&gt;Fundamental Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
-      <title>ENGR065</title>
+      <title>Circuit theory</title>
       <link>avashraj.github.io/notes/engr065/</link>
       <pubDate>Wed, 26 Feb 2025 13:54:43 -0800</pubDate>
       <guid>avashraj.github.io/notes/engr065/</guid>
-      <description></description>
+      <description>&lt;p&gt;important topics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;basics&lt;/li&gt;&#xA;&lt;li&gt;ohms law&lt;/li&gt;&#xA;&lt;li&gt;kcl&lt;/li&gt;&#xA;&lt;li&gt;kvl&lt;/li&gt;&#xA;&lt;li&gt;resistive circuits&lt;/li&gt;&#xA;&lt;li&gt;nodal analysis&lt;/li&gt;&#xA;&lt;li&gt;mesh analysis&lt;/li&gt;&#xA;&lt;li&gt;source transformation&lt;/li&gt;&#xA;&lt;li&gt;superposition&lt;/li&gt;&#xA;&lt;li&gt;thevenin and norton equivalent&lt;/li&gt;&#xA;&lt;li&gt;Maximum power transfer&lt;/li&gt;&#xA;&lt;li&gt;operational amplifier&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Operating Systems</title>
       <link>avashraj.github.io/notes/cse-150/</link>
       <pubDate>Wed, 26 Feb 2025 13:47:49 -0800</pubDate>
       <guid>avashraj.github.io/notes/cse-150/</guid>
-      <description>&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Threads&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Threads&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;li&gt;Atomic Operations&lt;/li&gt;&#xA;&lt;li&gt;Locks&lt;/li&gt;&#xA;&lt;li&gt;Mutual Exclusion&lt;/li&gt;&#xA;&lt;li&gt;Semaphores and Monitors&lt;/li&gt;&#xA;&lt;li&gt;Deadlocks&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Feb 26 2025</title>
