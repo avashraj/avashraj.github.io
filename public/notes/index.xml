@@ -13,7 +13,7 @@
       <link>avashraj.github.io/notes/cse185/</link>
       <pubDate>Wed, 26 Feb 2025 13:54:57 -0800</pubDate>
       <guid>avashraj.github.io/notes/cse185/</guid>
-      <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/homography/&#34;&gt;Homography&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/ransac/&#34;&gt;RANSAC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/linear-triangulation/&#34;&gt;Linear Triangulation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/epipolar-geometry/&#34;&gt;Epipolar Geometry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/fundamental-matrix/&#34;&gt;Fundamental Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/homography/&#34;&gt;Homography&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/ransac/&#34;&gt;RANSAC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/linear-triangulation/&#34;&gt;Linear Triangulation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/epipolar-geometry/&#34;&gt;Epipolar Geometry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/fundamental-matrix/&#34;&gt;Fundamental Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Circuit theory</title>
@@ -27,7 +27,7 @@
       <link>avashraj.github.io/notes/cse-150/</link>
       <pubDate>Wed, 26 Feb 2025 13:47:49 -0800</pubDate>
       <guid>avashraj.github.io/notes/cse-150/</guid>
-      <description>&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Threads&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;li&gt;Atomic Operations&lt;/li&gt;&#xA;&lt;li&gt;Locks&lt;/li&gt;&#xA;&lt;li&gt;Mutual Exclusion&lt;/li&gt;&#xA;&lt;li&gt;Semaphores and Monitors&lt;/li&gt;&#xA;&lt;li&gt;Deadlocks&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse150/thread/&#34;&gt;Thread&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;li&gt;Atomic Operations&lt;/li&gt;&#xA;&lt;li&gt;Locks&lt;/li&gt;&#xA;&lt;li&gt;Mutual Exclusion&lt;/li&gt;&#xA;&lt;li&gt;Semaphores and Monitors&lt;/li&gt;&#xA;&lt;li&gt;Deadlocks&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

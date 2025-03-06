@@ -6,8 +6,22 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Mar 2025 23:42:07 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 17:27:55 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thread</title>
+      <link>avashraj.github.io/notedirs/cse150/thread/</link>
+      <pubDate>Wed, 05 Mar 2025 17:27:55 -0800</pubDate>
+      <guid>avashraj.github.io/notedirs/cse150/thread/</guid>
+      <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse-150/&#34;&gt;Operating Systems&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;A thread is the smallest unique unit of execution in a CPU. It is also the smallest piece of execution that can be&#xA;scheduled independently by a scheduler in an operating system. A thread has its own&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;set of registers&lt;/li&gt;&#xA;&lt;li&gt;program counter&lt;/li&gt;&#xA;&lt;li&gt;stack memory&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Threads are a part of a larger process where they can share global variables, heap memory, and executable code with other&#xA;threads in the same process. A thread is executing when it is resident on a processor/core&amp;rsquo;s registers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mar 05 2025</title>
+      <link>avashraj.github.io/journal/mar-05-2025/</link>
+      <pubDate>Wed, 05 Mar 2025 17:20:25 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-05-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;in my computer vision lecture today, we learned more about constructing the fundamental matrix. The issue with our approach&#xA;was that the $F$ that we find is not guaranteed to have rank 2. We need rank 2 becuase $[e]_x$ has rank two. To make sure&#xA;of this, we need to constrain the matrix F. We do this by making another matrix $F&amp;rsquo;$ that is simply $F$ with its smallest&#xA;singular value dropped. The intuition for this is that by dropping the smallest singular value, we remove any noise that&#xA;might be affecting $F$ while keeping it as close as it was before. I also learned that in&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 04 2025</title>
       <link>avashraj.github.io/journal/mar-04-2025/</link>
@@ -24,16 +38,16 @@
     </item>
     <item>
       <title>Ransac</title>
-      <link>avashraj.github.io/cse185/ransac/</link>
+      <link>avashraj.github.io/notedirs/cse185/ransac/</link>
       <pubDate>Mon, 03 Mar 2025 15:46:03 -0800</pubDate>
-      <guid>avashraj.github.io/cse185/ransac/</guid>
+      <guid>avashraj.github.io/notedirs/cse185/ransac/</guid>
       <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;When we do SIFT, we get a bunch of features on each image. When we get matching features, many of these features may be&#xA;matching according to SIFT, but they do not actually correspond to their respective points on the images. We need a way to&#xA;make sure  the models(homography matrices) generated from those matches are actually good.&lt;/p&gt;&#xA;&lt;p&gt;We can use RANSAC to do this. The steps of ransac are as follows:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Homography</title>
-      <link>avashraj.github.io/cse185/homography/</link>
+      <link>avashraj.github.io/notedirs/cse185/homography/</link>
       <pubDate>Mon, 03 Mar 2025 14:24:15 -0800</pubDate>
-      <guid>avashraj.github.io/cse185/homography/</guid>
+      <guid>avashraj.github.io/notedirs/cse185/homography/</guid>
       <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;A homography is a transformation matrix that takes you from one plane to another plane through a point of projection. The&#xA;problem we are trying to solve is given a set of matching features/points in 2d images, how can we find a homography that best&#xA;agrees with these points?&lt;/p&gt;&#xA;&lt;p&gt;First when would this homography $H$ be valid?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;when we are taking images of a plane&lt;/li&gt;&#xA;&lt;li&gt;when the scene is very far(assumed at infinity) so it is a plane&lt;/li&gt;&#xA;&lt;li&gt;when images are taken from the same point&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;How can we compute $H$?&#xA;The homography is a 3x3 matrix that transforms a point from the source image to the destination image. We can only compute&#xA;homography up to a scale factor so even though there are 9 values, we have 8 degrees of freedom. We would stack matching&#xA;points on top of each other to form a overdetermined system of equations. The stacked points would be $A$ in the equation,&#xA;$Ah = 0$. We have a constraint $||h||^2 = 1$ so we do not get the trivial solution. We want to minimize $||Ah||^2 \text{ such that }&#xA;||h||^2 =1$. With some math:&lt;/p&gt;</description>
     </item>
     <item>
@@ -45,30 +59,30 @@
     </item>
     <item>
       <title>Fundamental Matrix</title>
-      <link>avashraj.github.io/cse185/fundamental-matrix/</link>
+      <link>avashraj.github.io/notedirs/cse185/fundamental-matrix/</link>
       <pubDate>Sun, 02 Mar 2025 15:31:26 -0800</pubDate>
-      <guid>avashraj.github.io/cse185/fundamental-matrix/</guid>
+      <guid>avashraj.github.io/notedirs/cse185/fundamental-matrix/</guid>
       <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;Computer Vision&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;The fundamental matrix $F$ is the algebraic representation of epipolar geometry. It is independant of the scene and can be&#xA;computed using corresponding points. We don&amp;rsquo;t even need to know the camera intrinsics or extrinsics. There will be a 2d homography&#xA;$H_\pi$ mapping each $x_i$ to $x&amp;rsquo;_i$ where $x_i$ is a point in img1 and $x&amp;rsquo;_i$ is a point in img2.&lt;/p&gt;&#xA;&lt;p&gt;The epipolar line in the image plane $l&amp;rsquo;$ connects $e&amp;rsquo;$ and $x&amp;rsquo;$ can be written as the cross product between the points. We can make a&#xA;skew symmetric matrix with $e&amp;rsquo;$ to make the cross operation part of a matrix multiplication like $[e&amp;rsquo;]_x$. Now&lt;/p&gt;</description>
     </item>
     <item>
       <title>Epipolar Geometry</title>
-      <link>avashraj.github.io/cse185/epipolar-geometry/</link>
+      <link>avashraj.github.io/notedirs/cse185/epipolar-geometry/</link>
       <pubDate>Sun, 02 Mar 2025 14:13:45 -0800</pubDate>
-      <guid>avashraj.github.io/cse185/epipolar-geometry/</guid>
+      <guid>avashraj.github.io/notedirs/cse185/epipolar-geometry/</guid>
       <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;Computer Vision&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Similar to triangulation, we can find the point in a 3d world with two images capturing that 3d scene. How tho? The problem&#xA;is: given two images of our scene, the camera matrices $M$ and $M&amp;rsquo;$ how can we find the irl point $P$?&#xA;If we draw rays from the image point in img1 and rays from image point in img2, they will not exactly meet at $P$. We can&#xA;take a linear approach and solve for the points closest to both of the rays and P.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Linear Triangulation</title>
-      <link>avashraj.github.io/cse185/linear-triangulation/</link>
+      <link>avashraj.github.io/notedirs/cse185/linear-triangulation/</link>
       <pubDate>Sun, 02 Mar 2025 13:29:31 -0800</pubDate>
-      <guid>avashraj.github.io/cse185/linear-triangulation/</guid>
+      <guid>avashraj.github.io/notedirs/cse185/linear-triangulation/</guid>
       <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Imagine a scene like a library. We have a camera taking a picture of the scene. We displace the camera to the right by&#xA;&lt;strong&gt;d&lt;/strong&gt; and take another picture of the scence. How can we estimate the coordinates of a point on the scene in terms of the&#xA;axis where both of the cameras lie, and the depth of the image or how far in front of the camera the point is?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hough Transform</title>
-      <link>avashraj.github.io/cse185/hough-transform/</link>
+      <link>avashraj.github.io/notedirs/cse185/hough-transform/</link>
       <pubDate>Sat, 01 Mar 2025 19:45:43 -0800</pubDate>
-      <guid>avashraj.github.io/cse185/hough-transform/</guid>
+      <guid>avashraj.github.io/notedirs/cse185/hough-transform/</guid>
       <description>&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/notes/cse185/&#34;&gt;CSE185&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;from &lt;a href=&#34;avashraj.github.io/journal/mar-01-2025/&#34;&gt;Mar 01 2025&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;hough transform&lt;/strong&gt; is one way to find lines in images. It can be done after edge detection because we need an edge map.&#xA;It can withstand edges not being connected and objects not being completely in the image. The problem is given edge points&#xA;for an image, how can we find lines?&lt;/p&gt;&#xA;&lt;p&gt;First we can think of the line equation&#xA;$$&#xA;y = mx + b \Leftrightarrow b = y - mx&#xA;$$&lt;/p&gt;</description>
     </item>
     <item>
@@ -97,7 +111,7 @@
       <link>avashraj.github.io/notes/cse185/</link>
       <pubDate>Wed, 26 Feb 2025 13:54:57 -0800</pubDate>
       <guid>avashraj.github.io/notes/cse185/</guid>
-      <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/homography/&#34;&gt;Homography&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/ransac/&#34;&gt;RANSAC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/linear-triangulation/&#34;&gt;Linear Triangulation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/epipolar-geometry/&#34;&gt;Epipolar Geometry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/cse185/fundamental-matrix/&#34;&gt;Fundamental Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;important-topics&#34;&gt;important topics:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/homography/&#34;&gt;Homography&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/ransac/&#34;&gt;RANSAC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/hough-transform/&#34;&gt;Hough Transform&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/linear-triangulation/&#34;&gt;Linear Triangulation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/epipolar-geometry/&#34;&gt;Epipolar Geometry&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse185/fundamental-matrix/&#34;&gt;Fundamental Matrix&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Circuit theory</title>
@@ -111,7 +125,7 @@
       <link>avashraj.github.io/notes/cse-150/</link>
       <pubDate>Wed, 26 Feb 2025 13:47:49 -0800</pubDate>
       <guid>avashraj.github.io/notes/cse-150/</guid>
-      <description>&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Threads&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;li&gt;Atomic Operations&lt;/li&gt;&#xA;&lt;li&gt;Locks&lt;/li&gt;&#xA;&lt;li&gt;Mutual Exclusion&lt;/li&gt;&#xA;&lt;li&gt;Semaphores and Monitors&lt;/li&gt;&#xA;&lt;li&gt;Deadlocks&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;important-topics&#34;&gt;Important topics&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/cse150/thread/&#34;&gt;Thread&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Processes&lt;/li&gt;&#xA;&lt;li&gt;Address spaces&lt;/li&gt;&#xA;&lt;li&gt;Concurrency&lt;/li&gt;&#xA;&lt;li&gt;Synchronization&lt;/li&gt;&#xA;&lt;li&gt;Atomic Operations&lt;/li&gt;&#xA;&lt;li&gt;Locks&lt;/li&gt;&#xA;&lt;li&gt;Mutual Exclusion&lt;/li&gt;&#xA;&lt;li&gt;Semaphores and Monitors&lt;/li&gt;&#xA;&lt;li&gt;Deadlocks&lt;/li&gt;&#xA;&lt;li&gt;Scheduling&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Feb 26 2025</title>

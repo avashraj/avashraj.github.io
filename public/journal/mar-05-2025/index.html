@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Mar 05 2025 - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="i learned
+in my computer vision lecture today, we learned more about constructing the fundamental matrix. The issue with our approach
+was that the $F$ that we find is not guaranteed to have rank 2. We need rank 2 becuase $[e]_x$ has rank two. To make sure
+of this, we need to constrain the matrix F. We do this by making another matrix $F&rsquo;$ that is simply $F$ with its smallest
+singular value dropped. The intuition for this is that by dropping the smallest singular value, we remove any noise that
+might be affecting $F$ while keeping it as close as it was before. I also learned that in" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/journal/mar-05-2025/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Mar 05 2025">
+  <meta property="og:description" content="i learned in my computer vision lecture today, we learned more about constructing the fundamental matrix. The issue with our approach was that the $F$ that we find is not guaranteed to have rank 2. We need rank 2 becuase $[e]_x$ has rank two. To make sure of this, we need to constrain the matrix F. We do this by making another matrix $F’$ that is simply $F$ with its smallest singular value dropped. The intuition for this is that by dropping the smallest singular value, we remove any noise that might be affecting $F$ while keeping it as close as it was before. I also learned that in">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="journal">
+    <meta property="article:published_time" content="2025-03-05T17:20:25-08:00">
+    <meta property="article:modified_time" content="2025-03-05T17:20:25-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mar 05 2025">
+  <meta name="twitter:description" content="i learned in my computer vision lecture today, we learned more about constructing the fundamental matrix. The issue with our approach was that the $F$ that we find is not guaranteed to have rank 2. We need rank 2 becuase $[e]_x$ has rank two. To make sure of this, we need to constrain the matrix F. We do this by making another matrix $F’$ that is simply $F$ with its smallest singular value dropped. The intuition for this is that by dropping the smallest singular value, we remove any noise that might be affecting $F$ while keeping it as close as it was before. I also learned that in">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Mar 05 2025</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<h1 id="i-learned">i learned</h1>
+<p>in my computer vision lecture today, we learned more about constructing the fundamental matrix. The issue with our approach
+was that the $F$ that we find is not guaranteed to have rank 2. We need rank 2 becuase $[e]_x$ has rank two. To make sure
+of this, we need to constrain the matrix F. We do this by making another matrix $F&rsquo;$ that is simply $F$ with its smallest
+singular value dropped. The intuition for this is that by dropping the smallest singular value, we remove any noise that
+might be affecting $F$ while keeping it as close as it was before. I also learned that in</p>
+<p>$$
+a^T B a = 0
+$$</p>
+<p>B is always a skew symmetric matrix. There was a lot more math too in hopes for going from the fundamental matrix to the
+essential matrix to the camera extrinsics to finally get our world point. We are trying to find out where our camera is in
+relation to the 3d world.</p>
+<p>I started prepping for my operating systems midterm next week. I studied threads today. A thread is the smallest single
+unit of execution. I&rsquo;m trying really hard to put this in simpler terms. When code gets executed on the CPU, at least one
+thread is running. It is also the smallest unit that can get independantly scheduled by the scheduler. A scheduler cannot
+schedule a single instruction from a thread. Every thread has a TCB, a thread control block. This is a data structure that
+holds all information for a thread. This includes a thread&rsquo;s id, stack pointer, registers, program counter, the thread&rsquo;s
+state, and a pointer to a its process. I forgot to mention every process shares memory and files with their threads. A thread
+is always part of a process. A thread also has a stack, registers, and PC.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

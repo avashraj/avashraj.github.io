@@ -6,8 +6,15 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Mar 2025 23:42:07 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 17:20:25 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 05 2025</title>
+      <link>avashraj.github.io/journal/mar-05-2025/</link>
+      <pubDate>Wed, 05 Mar 2025 17:20:25 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-05-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;in my computer vision lecture today, we learned more about constructing the fundamental matrix. The issue with our approach&#xA;was that the $F$ that we find is not guaranteed to have rank 2. We need rank 2 becuase $[e]_x$ has rank two. To make sure&#xA;of this, we need to constrain the matrix F. We do this by making another matrix $F&amp;rsquo;$ that is simply $F$ with its smallest&#xA;singular value dropped. The intuition for this is that by dropping the smallest singular value, we remove any noise that&#xA;might be affecting $F$ while keeping it as close as it was before. I also learned that in&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 04 2025</title>
       <link>avashraj.github.io/journal/mar-04-2025/</link>
