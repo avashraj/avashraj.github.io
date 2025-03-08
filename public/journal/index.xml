@@ -6,8 +6,22 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Mar 2025 17:20:25 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 01:48:27 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 07 2025</title>
+      <link>avashraj.github.io/journal/mar-07-2025/</link>
+      <pubDate>Sat, 08 Mar 2025 01:48:27 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-07-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;KVL is Kirchhoff&amp;rsquo;s Voltage Law. It states that the sum of voltage drops and rise around a closed loop is zero. We treat voltage&#xA;rises as positive and voltage drops as negative. We make an equation for each loop. In a series circuit, the same current&#xA;flows through all components in a circuit. A branch is a single element in a circuit and a node is a point where 2 or more&#xA;components meet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mar 06 2025</title>
+      <link>avashraj.github.io/journal/mar-06-25/</link>
+      <pubDate>Fri, 07 Mar 2025 15:52:28 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-06-25/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I am doing this a day late :(&lt;/p&gt;&#xA;&lt;p&gt;I was helping a capstone team out with their project because it relates to my current work at school and I was able to work&#xA;through a git problem that someone had. He committed stuff locally but did not pull before comitting.&#xA;I was able to recognize this problem and say you should reset your last commit but save the changes in your workspace.&#xA;Then I guided him to stash his changes, pull remote changes, apply his stash and boom! No more git problem. This sounds&#xA;super simple, but I was feeling the day before that I was not good enough to do programming. Little victories like these&#xA;where my knowledge can help someone else reminds me that I can.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 05 2025</title>
       <link>avashraj.github.io/journal/mar-05-2025/</link>
