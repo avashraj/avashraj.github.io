@@ -6,8 +6,22 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 01:48:27 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 21:59:13 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 08 2025</title>
+      <link>avashraj.github.io/journal/mar-08-2025/</link>
+      <pubDate>Sat, 08 Mar 2025 21:59:13 -0800</pubDate>
+      <guid>avashraj.github.io/journal/mar-08-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;Mesh analysis is a circuit analysis technique where we create fake mesh currents in closed loops and apply KVL. With these&#xA;equations we can solve for whatever the problem asks for. Mesh analysis can only be done with planar circuits. To solve for&#xA;a system of equations I started using the julia REPL. I have been wanting to learn julia for a few weeks and I finally found&#xA;a way to use it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mesh Analysis</title>
+      <link>avashraj.github.io/notedirs/engr065/mesh-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 20:34:15 -0800</pubDate>
+      <guid>avashraj.github.io/notedirs/engr065/mesh-analysis/</guid>
+      <description>&lt;p&gt;Mesh analysis is a circuit analysis method that attempts to decrease the total number of equations needed to solve a&#xA;circuit. Mesh analysis only works on &lt;strong&gt;planar&lt;/strong&gt; circuits.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;planar circuit&lt;/strong&gt; is a circuit that can be drawn on a plane with no wires crossing each other&lt;/p&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;steps:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Find and label all meshes. A mesh is a closed loop that does not contain any other loops within it&lt;/li&gt;&#xA;&lt;li&gt;Assume a clockwise current in each mesh/loop&lt;/li&gt;&#xA;&lt;li&gt;Use KVL in each loop; use Ohm&amp;rsquo;s law if necessary&lt;/li&gt;&#xA;&lt;li&gt;Solve the system of equations&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;supermesh&#34;&gt;supermesh&lt;/h3&gt;&#xA;&lt;p&gt;If there is a current source in between two meshes, we call that a super mesh. We can &amp;lsquo;remove&amp;rsquo; the supermesh and treat&#xA;the two loops as one loop. We make one big equation. We will also make another equation relating the current source to&#xA;the two mesh currents&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 07 2025</title>
       <link>avashraj.github.io/journal/mar-07-2025/</link>
@@ -45,9 +59,9 @@
     </item>
     <item>
       <title>Mar 03 2025</title>
-      <link>avashraj.github.io/mar-03-2025/</link>
+      <link>avashraj.github.io/journal/mar-03-2025/</link>
       <pubDate>Mon, 03 Mar 2025 22:33:12 -0800</pubDate>
-      <guid>avashraj.github.io/mar-03-2025/</guid>
+      <guid>avashraj.github.io/journal/mar-03-2025/</guid>
       <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;I didn&amp;rsquo;t learn much new I was mainly going over my notes that I have been writing for&#xA;computer vision.&lt;/p&gt;</description>
     </item>
     <item>
@@ -132,7 +146,7 @@
       <link>avashraj.github.io/notes/engr065/</link>
       <pubDate>Wed, 26 Feb 2025 13:54:43 -0800</pubDate>
       <guid>avashraj.github.io/notes/engr065/</guid>
-      <description>&lt;p&gt;important topics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;basics&lt;/li&gt;&#xA;&lt;li&gt;ohms law&lt;/li&gt;&#xA;&lt;li&gt;kcl&lt;/li&gt;&#xA;&lt;li&gt;kvl&lt;/li&gt;&#xA;&lt;li&gt;resistive circuits&lt;/li&gt;&#xA;&lt;li&gt;nodal analysis&lt;/li&gt;&#xA;&lt;li&gt;mesh analysis&lt;/li&gt;&#xA;&lt;li&gt;source transformation&lt;/li&gt;&#xA;&lt;li&gt;superposition&lt;/li&gt;&#xA;&lt;li&gt;thevenin and norton equivalent&lt;/li&gt;&#xA;&lt;li&gt;Maximum power transfer&lt;/li&gt;&#xA;&lt;li&gt;operational amplifier&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;important topics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;basics&lt;/li&gt;&#xA;&lt;li&gt;ohms law&lt;/li&gt;&#xA;&lt;li&gt;kcl&lt;/li&gt;&#xA;&lt;li&gt;kvl&lt;/li&gt;&#xA;&lt;li&gt;resistive circuits&lt;/li&gt;&#xA;&lt;li&gt;nodal analysis&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/engr065/mesh-analysis/&#34;&gt;Mesh Analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;source transformation&lt;/li&gt;&#xA;&lt;li&gt;superposition&lt;/li&gt;&#xA;&lt;li&gt;thevenin and norton equivalent&lt;/li&gt;&#xA;&lt;li&gt;Maximum power transfer&lt;/li&gt;&#xA;&lt;li&gt;operational amplifier&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Operating Systems</title>

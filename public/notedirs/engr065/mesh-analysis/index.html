@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Mesh Analysis - putergoon.com</title></div><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Mesh analysis is a circuit analysis method that attempts to decrease the total number of equations needed to solve a
+circuit. Mesh analysis only works on planar circuits.
+A planar circuit is a circuit that can be drawn on a plane with no wires crossing each other
+steps:
+
+Find and label all meshes. A mesh is a closed loop that does not contain any other loops within it
+Assume a clockwise current in each mesh/loop
+Use KVL in each loop; use Ohm&rsquo;s law if necessary
+Solve the system of equations
+
+supermesh
+If there is a current source in between two meshes, we call that a super mesh. We can &lsquo;remove&rsquo; the supermesh and treat
+the two loops as one loop. We make one big equation. We will also make another equation relating the current source to
+the two mesh currents" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="avashraj.github.io/notedirs/engr065/mesh-analysis/">
+  <meta property="og:site_name" content="putergoon.com">
+  <meta property="og:title" content="Mesh Analysis">
+  <meta property="og:description" content="Mesh analysis is a circuit analysis method that attempts to decrease the total number of equations needed to solve a circuit. Mesh analysis only works on planar circuits.
+A planar circuit is a circuit that can be drawn on a plane with no wires crossing each other
+steps: Find and label all meshes. A mesh is a closed loop that does not contain any other loops within it Assume a clockwise current in each mesh/loop Use KVL in each loop; use Ohm’s law if necessary Solve the system of equations supermesh If there is a current source in between two meshes, we call that a super mesh. We can ‘remove’ the supermesh and treat the two loops as one loop. We make one big equation. We will also make another equation relating the current source to the two mesh currents">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notedirs">
+    <meta property="article:published_time" content="2025-03-08T20:34:15-08:00">
+    <meta property="article:modified_time" content="2025-03-08T20:34:15-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mesh Analysis">
+  <meta name="twitter:description" content="Mesh analysis is a circuit analysis method that attempts to decrease the total number of equations needed to solve a circuit. Mesh analysis only works on planar circuits.
+A planar circuit is a circuit that can be drawn on a plane with no wires crossing each other
+steps: Find and label all meshes. A mesh is a closed loop that does not contain any other loops within it Assume a clockwise current in each mesh/loop Use KVL in each loop; use Ohm’s law if necessary Solve the system of equations supermesh If there is a current source in between two meshes, we call that a super mesh. We can ‘remove’ the supermesh and treat the two loops as one loop. We make one big equation. We will also make another equation relating the current source to the two mesh currents">
+
+	
+        <link href="avashraj.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="avashraj.github.io/css/main.082fc93372816ac79dcc01839e3d034c77b25a9183e4c2b818fca144a3d6cc50.css" />
+
+	
+	
+
+	
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+					renderMathInElement(document.body, {
+							delimiters: [
+									{left: "$$", right: "$$", display: true},
+									{left: "$", right: "$", display: false}
+							]
+					});
+			});
+			</script>
+	
+
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="/">putergoon.com</a>
+	</div>
+	<nav>
+		
+		<a href="avashraj.github.io/blogs">Blog</a>
+		
+		<a href="avashraj.github.io/notes">Notes</a>
+		
+		<a href="avashraj.github.io/journal">Journal</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Mesh Analysis</h1>
+			
+		</div>
+		
+
+		
+
+		<section class="body">
+			<p>Mesh analysis is a circuit analysis method that attempts to decrease the total number of equations needed to solve a
+circuit. Mesh analysis only works on <strong>planar</strong> circuits.</p>
+<p>A <strong>planar circuit</strong> is a circuit that can be drawn on a plane with no wires crossing each other</p>
+<h3 id="steps">steps:</h3>
+<ol>
+<li>Find and label all meshes. A mesh is a closed loop that does not contain any other loops within it</li>
+<li>Assume a clockwise current in each mesh/loop</li>
+<li>Use KVL in each loop; use Ohm&rsquo;s law if necessary</li>
+<li>Solve the system of equations</li>
+</ol>
+<h3 id="supermesh">supermesh</h3>
+<p>If there is a current source in between two meshes, we call that a super mesh. We can &lsquo;remove&rsquo; the supermesh and treat
+the two loops as one loop. We make one big equation. We will also make another equation relating the current source to
+the two mesh currents</p>
+<h3 id="dependant-sources">dependant sources</h3>
+<p>We will need an additional equation to deal with a dependant voltage source.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+		</article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  
+  
+  
+  
+</footer>
+
+
+</div>
+    </body>
+</html>

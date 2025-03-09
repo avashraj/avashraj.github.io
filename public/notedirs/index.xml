@@ -6,8 +6,15 @@
     <description>Recent content in NoteDirs on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Mar 2025 17:27:55 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Mar 2025 20:34:15 -0800</lastBuildDate>
     <atom:link href="avashraj.github.io/notedirs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mesh Analysis</title>
+      <link>avashraj.github.io/notedirs/engr065/mesh-analysis/</link>
+      <pubDate>Sat, 08 Mar 2025 20:34:15 -0800</pubDate>
+      <guid>avashraj.github.io/notedirs/engr065/mesh-analysis/</guid>
+      <description>&lt;p&gt;Mesh analysis is a circuit analysis method that attempts to decrease the total number of equations needed to solve a&#xA;circuit. Mesh analysis only works on &lt;strong&gt;planar&lt;/strong&gt; circuits.&lt;/p&gt;&#xA;&lt;p&gt;A &lt;strong&gt;planar circuit&lt;/strong&gt; is a circuit that can be drawn on a plane with no wires crossing each other&lt;/p&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;steps:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Find and label all meshes. A mesh is a closed loop that does not contain any other loops within it&lt;/li&gt;&#xA;&lt;li&gt;Assume a clockwise current in each mesh/loop&lt;/li&gt;&#xA;&lt;li&gt;Use KVL in each loop; use Ohm&amp;rsquo;s law if necessary&lt;/li&gt;&#xA;&lt;li&gt;Solve the system of equations&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;supermesh&#34;&gt;supermesh&lt;/h3&gt;&#xA;&lt;p&gt;If there is a current source in between two meshes, we call that a super mesh. We can &amp;lsquo;remove&amp;rsquo; the supermesh and treat&#xA;the two loops as one loop. We make one big equation. We will also make another equation relating the current source to&#xA;the two mesh currents&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Thread</title>
       <link>avashraj.github.io/notedirs/cse150/thread/</link>

@@ -11,7 +11,7 @@ important topics
  - kvl
  - resistive circuits
  - nodal analysis
- - mesh analysis
+ - [Mesh Analysis]({{< relref "noteDirs/ENGR065/mesh-analysis.md" >}})
  - source transformation
  - superposition
  - thevenin and norton equivalent
