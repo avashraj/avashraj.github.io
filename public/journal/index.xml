@@ -6,8 +6,15 @@
     <description>Recent content in Journals on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Mar 2025 23:49:31 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 07:40:20 -0700</lastBuildDate>
     <atom:link href="avashraj.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mar 10 2025</title>
+      <link>avashraj.github.io/journal/mar-10-2025/</link>
+      <pubDate>Mon, 10 Mar 2025 07:40:20 -0700</pubDate>
+      <guid>avashraj.github.io/journal/mar-10-2025/</guid>
+      <description>&lt;h1 id=&#34;i-learned&#34;&gt;i learned&lt;/h1&gt;&#xA;&lt;p&gt;When coding with threads, two problems that may occur are &lt;strong&gt;starvation&lt;/strong&gt; and &lt;strong&gt;deadlock&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Starvation&lt;/strong&gt; - a thread waits indefinitely; a scheduling issue&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Deadlock&lt;/strong&gt; - a circular waiting for resources exists within threads; happens when resource dependencies form&#xA;a cycle&lt;/p&gt;&#xA;&lt;p&gt;there are 4 requirements for a deadlock:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;mutual exclusion - only one thread at a time can use a resource&lt;/li&gt;&#xA;&lt;li&gt;hold and wait - a thread holding at least one resource is waiting to acquire additional resources&lt;/li&gt;&#xA;&lt;li&gt;no preemption - resources are only voluntarily released by threads after they are finished with the resource&lt;/li&gt;&#xA;&lt;li&gt;circular wait - there exists a set ${ T_1 \dots T_n}$ of waiting threads where $T_1$ waits on $T_2$ and $T_n$&#xA;waits on $T_1$&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
     <item>
       <title>Mar 09 2025</title>
       <link>avashraj.github.io/journal/mar-09-2025/</link>
