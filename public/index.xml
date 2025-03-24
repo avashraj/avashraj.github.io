@@ -6,8 +6,15 @@
     <description>Recent content in becoming GOAT on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 07:40:20 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 11:09:21 -0700</lastBuildDate>
     <atom:link href="avashraj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nodal Analysis</title>
+      <link>avashraj.github.io/notedirs/engr065/nodal-analysis/</link>
+      <pubDate>Tue, 11 Mar 2025 11:09:21 -0700</pubDate>
+      <guid>avashraj.github.io/notedirs/engr065/nodal-analysis/</guid>
+      <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/engr065/&#34;&gt;Circuit Theory&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mar 10 2025</title>
       <link>avashraj.github.io/journal/mar-10-2025/</link>
@@ -160,7 +167,7 @@
       <link>avashraj.github.io/notes/engr065/</link>
       <pubDate>Wed, 26 Feb 2025 13:54:43 -0800</pubDate>
       <guid>avashraj.github.io/notes/engr065/</guid>
-      <description>&lt;p&gt;important topics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;basics&lt;/li&gt;&#xA;&lt;li&gt;ohms law&lt;/li&gt;&#xA;&lt;li&gt;kcl&lt;/li&gt;&#xA;&lt;li&gt;kvl&lt;/li&gt;&#xA;&lt;li&gt;resistive circuits&lt;/li&gt;&#xA;&lt;li&gt;nodal analysis&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/engr065/mesh-analysis/&#34;&gt;Mesh Analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;source transformation&lt;/li&gt;&#xA;&lt;li&gt;superposition&lt;/li&gt;&#xA;&lt;li&gt;thevenin and norton equivalent&lt;/li&gt;&#xA;&lt;li&gt;Maximum power transfer&lt;/li&gt;&#xA;&lt;li&gt;operational amplifier&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;important topics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;basics&lt;/li&gt;&#xA;&lt;li&gt;ohms law&lt;/li&gt;&#xA;&lt;li&gt;kcl&lt;/li&gt;&#xA;&lt;li&gt;kvl&lt;/li&gt;&#xA;&lt;li&gt;resistive circuits&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/engr065/nodal-analysis/&#34;&gt;Nodal Analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;avashraj.github.io/notedirs/engr065/mesh-analysis/&#34;&gt;Mesh Analysis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;source transformation&lt;/li&gt;&#xA;&lt;li&gt;superposition&lt;/li&gt;&#xA;&lt;li&gt;thevenin and norton equivalent&lt;/li&gt;&#xA;&lt;li&gt;Maximum power transfer&lt;/li&gt;&#xA;&lt;li&gt;operational amplifier&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Operating Systems</title>

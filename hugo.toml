@@ -12,19 +12,19 @@ enableEmoji = true
 # 	mode="toggle"
 #     custom_css = ["css/main.css"]
 
-[params]
-    katex = true
-[[menu.main]]
-name = "Blog"
-url = "/blogs"
-weight = 1
-
-[[menu.main]]
-name = "Notes"
-url = "/Notes"
-weight = 3
-
-[[menu.main]]
-name = "Journal"
-url = "/journal"
-weight = 5
+# [params]
+#     katex = true
+# [[menu.main]]
+# name = "Blog"
+# url = "/blogs"
+# weight = 1
+#
+# [[menu.main]]
+# name = "Notes"
+# url = "/Notes"
+# weight = 3
+#
+# [[menu.main]]
+# name = "Journal"
+# url = "/journal"
+# weight = 5

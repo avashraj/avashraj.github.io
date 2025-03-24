@@ -12,7 +12,5 @@ title = 'becoming GOAT'
 ## currently I am
  - working on my SAPPHIRE -> THE ULTIMATE PRODUCTIVITY TOOL
  - building a tool for professors to make skill based groups for technical projects
+ - maintaining the i2g website for my school
 
-this is where I document my learning. 
-
-i write a journal entry every day and i'll be writing blogs and notes soon :)

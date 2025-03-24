@@ -6,8 +6,15 @@
     <description>Recent content in NoteDirs on putergoon.com</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2025 20:34:15 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 11:09:21 -0700</lastBuildDate>
     <atom:link href="avashraj.github.io/notedirs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nodal Analysis</title>
+      <link>avashraj.github.io/notedirs/engr065/nodal-analysis/</link>
+      <pubDate>Tue, 11 Mar 2025 11:09:21 -0700</pubDate>
+      <guid>avashraj.github.io/notedirs/engr065/nodal-analysis/</guid>
+      <description>&lt;p&gt;from &lt;a href=&#34;avashraj.github.io/notes/engr065/&#34;&gt;Circuit Theory&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mesh Analysis</title>
       <link>avashraj.github.io/notedirs/engr065/mesh-analysis/</link>

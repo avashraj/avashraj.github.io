@@ -1,0 +1,261 @@
+{{ define "main" }}
+
+<h1>daily learning</h1>
+
+<div class="calendar-container">
+  <div class="calendar-navigation">
+    <a href="#" class="prev-month" id="prevMonth">&laquo; Previous</a>
+    <h2 id="currentMonthYear">{{ now.Format "January 2006" }}</h2>
+    <a href="#" class="next-month" id="nextMonth">Next &raquo;</a>
+  </div>
+
+  <div class="calendar" id="journalCalendar">
+    <!-- Calendar will be generated here -->
+  </div>
+</div>
+
+<!-- List view toggle button -->
+<div class="view-toggle">
+  <a href="#" id="toggleListView">View as List</a>
+</div>
+
+<!-- Hidden list view that can be toggled -->
+<div class="posts-list" id="postsListView" style="display: none;">
+  <ul class="posts">
+    {{- range .Data.Pages -}}
+      {{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+      <li class="post">
+        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+      </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
+</div>
+
+<!-- Script to generate and handle the calendar -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all journal entries
+    const journalEntries = [
+      {{- range .Data.Pages -}}
+        {{- $filename := path.Base .File.Path -}}
+        {{- if (findRE "^[a-z]+-\\d{2}-\\d{4}\\.md$" $filename) -}}
+          {
+            url: "{{ .RelPermalink }}",
+            title: "{{ .Title }}",
+            date: "{{ $filename | replaceRE "^([a-z]+)-([0-9]+)-([0-9]+)\\.md$" "$1-$2-$3" }}"
+          },
+        {{- end -}}
+      {{- end -}}
+    ];
+
+    // Current displayed month and year
+    let currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    // Initial calendar generation
+    generateCalendar(currentMonth, currentYear);
+    updateMonthYearTitle();
+
+    // Navigation event listeners
+    document.getElementById('prevMonth').addEventListener('click', function(e) {
+      e.preventDefault();
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      generateCalendar(currentMonth, currentYear);
+      updateMonthYearTitle();
+    });
+
+    document.getElementById('nextMonth').addEventListener('click', function(e) {
+      e.preventDefault();
+      currentMonth++;
+      if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+      }
+      generateCalendar(currentMonth, currentYear);
+      updateMonthYearTitle();
+    });
+
+    // Toggle list view
+    document.getElementById('toggleListView').addEventListener('click', function(e) {
+      e.preventDefault();
+      const calendarView = document.getElementById('journalCalendar');
+      const listView = document.getElementById('postsListView');
+      const toggleBtn = document.getElementById('toggleListView');
+      
+      if (listView.style.display === 'none') {
+        listView.style.display = 'block';
+        calendarView.style.display = 'none';
+        toggleBtn.textContent = 'View as Calendar';
+      } else {
+        listView.style.display = 'none';
+        calendarView.style.display = 'grid';
+        toggleBtn.textContent = 'View as List';
+      }
+    });
+
+    // Update the month/year title
+    function updateMonthYearTitle() {
+      const months = [
+        'January', 'February', 'March', 'April', 'May', 'June', 'July', 
+        'August', 'September', 'October', 'November', 'December'
+      ];
+      document.getElementById('currentMonthYear').textContent = `${months[currentMonth]} ${currentYear}`;
+    }
+
+    // Generate the calendar grid
+    function generateCalendar(month, year) {
+      const calendar = document.getElementById('journalCalendar');
+      calendar.innerHTML = '';
+
+      // Day headers
+      const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      dayHeaders.forEach(day => {
+        const dayHeader = document.createElement('div');
+        dayHeader.className = 'day-header';
+        dayHeader.textContent = day;
+        calendar.appendChild(dayHeader);
+      });
+
+      // Get first day of month and total days
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      // Create empty cells for days before the first day of month
+      for (let i = 0; i < firstDay; i++) {
+        const emptyDay = document.createElement('div');
+        emptyDay.className = 'day empty';
+        calendar.appendChild(emptyDay);
+      }
+
+      // Create cells for each day in the month
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dayCell = document.createElement('div');
+        dayCell.className = 'day';
+        dayCell.textContent = day;
+
+        // Format this date in the same format as your filenames
+        const monthNames = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+        const formattedDay = day.toString().padStart(2, '0');
+        const dateString = `${monthNames[month]}-${formattedDay}-${year}`;
+
+        // Check if we have an entry for this day
+        const entry = journalEntries.find(entry => {
+          return entry.date.includes(dateString);
+        });
+
+        if (entry) {
+          dayCell.classList.add('has-entry');
+          
+          // Create the link
+          const link = document.createElement('a');
+          link.href = entry.url;
+          link.title = entry.title || `Journal entry for ${dateString}`;
+          
+          // Move the day number into the link
+          link.textContent = day;
+          dayCell.textContent = '';
+          dayCell.appendChild(link);
+        }
+
+        calendar.appendChild(dayCell);
+      }
+    }
+  });
+</script>
+
+<style>
+  .calendar-container {
+    margin: 2rem 0;
+  }
+
+  .calendar-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-bottom: 2rem;
+  }
+
+  .day-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+  }
+
+  .day {
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+  }
+
+  .day.empty {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+  }
+
+  .day.has-entry {
+    background-color: #e6f7ff;
+    font-weight: bold;
+  }
+
+  .day.has-entry a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #0066cc;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .day.has-entry a:hover {
+    background-color: #b3e0ff;
+    border-radius: 50%;
+  }
+
+  .view-toggle {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .view-toggle a {
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Optional: Add responsive styling */
+  @media (max-width: 600px) {
+    .calendar {
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+    }
+    
+    .day {
+      height: 30px;
+      padding: 0.25rem;
+    }
+  }
+</style>
+
+{{ end }}

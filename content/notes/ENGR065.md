@@ -10,7 +10,7 @@ important topics
  - kcl
  - kvl
  - resistive circuits
- - nodal analysis
+ - [Nodal Analysis]({{< relref "noteDirs/ENGR065/nodal-analysis.md" >}})
  - [Mesh Analysis]({{< relref "noteDirs/ENGR065/mesh-analysis.md" >}})
  - source transformation
  - superposition
